@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <h1 hidden>Интернет-магазин "Дивайс"</h1>
+    <a class="page-header__logo" href="#">
+      <img src="img/logo.svg" alt="logo">
+    </a>
+    <div class="page-header__top top-menu">
+      <form class="form-search search" action="#">
+        <img src="img/icon_search.svg" alt="search">
+        <input class="search__text" type="text" placeholder="Поиск по сайту">
+        <button class="search__button" type="submit">Найти</button>
+      </form>
+      <a href="#" type="button">
+        <img src="img/icon_user.svg" alt="аватар">
+        <span class="enter">Войти</span>
+      </a>
+      <a href="#" type="button">
+        <img src="img/icon_chart.svg" alt="сравнение">
+        <span>Сравнить</span>
+      </a>
+      <a href="#" type="button">
+        <img src="img/icon_cart.svg" alt="корзина">
+        <span>Корзина</span>
+      </a>
+    </div>
+    <nav class="page-header__bottom bottom-menu">
+      <button class="bottom-menu__button-catalog" type="button">Каталог товаров
+        <span>
+          <img src="img/icon_plus.svg" alt="плюс">
+        </span>
+      </button>
+      <div class="bottom-menu__catalog catalog-products">
+        <ul class="catalog-products__nav" hidden>
+          <li><a href=#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="catalog.html">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </div>
+      <ul class="catalog-products__nav-site">
+        <li><a href="#3">Доставка</a></li>
+        <li><a href="#3">Гарантия</a></li>
+        <li><a href="#5">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 hidden>Top slider</h2>
+      <ul class="top-slider">
+        <li class="top-slider__list slider-list">
+          <div class="block-slider__item slider-block">
+            <div class="slider-block__img block-img">
+              <img src="img/slider_1.png" width="384" height="486" alt="slider-1">
+            </div>
+            <div class="slider-block__info block-info">
+              <p><span></span>01</p>
+              <h3>Делай селфи, как&nbsp;Бен Стиллер!</h3>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <button class="block-info__button">Подробнее</button>
+              <table class="block-info__options">
+                <tr>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </li>
+        <li class="top-slider__list slider-list">
+          <div class="block-slider__item slider-item">
+            <div class="slider-block__img block-img">
+              <img src="img/slider_2.png" width="345" height="485" alt="slider-2">
+            </div>
+            <div class="slider-block__info block-info">
+              <p><span></span>02</p>
+              <h3>Худеем правильно!</h3>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.</p>
+              <button class="block-info__button">Подробнее</button>
+              <table class="block-info__options">
+                <tr>
+                  <th>48&nbsp;часов</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </li>
+        <li class="top-slider__list slider-list">
+          <div class="block-slider__item slider-item">
+            <div class="slider-block__img block-img">
+              <img src="img/slider_3.png" width="526" height="334" alt="slider-3">
+            </div>
+            <div class="slider-block__info block-info">
+              <p><span></span>03</p>
+              <h3>Порхает&nbsp;как&nbsp;бабочка, жалит как пчела!</h3>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.</p>
+              <button class="block-info__button">Подробнее</button>
+              <table class="block-info__options">
+                <tr>
+                  <th>800 м</th>
+                  <th>50 м</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="pagination-slider">
+        <li class="item"><span></span></li>
+        <li class="item"><span></span></li>
+        <li class="item"><span></span></li>
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>
