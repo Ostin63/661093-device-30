@@ -38,7 +38,7 @@
         </span>
       </button>
       <div class="bottom-menu__catalog catalog-products">
-        <ul class="catalog-products__nav" hidden>
+        <ul class="catalog-products__nav">
           <li><a href=#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="catalog.html">Экшн-камеры</a></li>
@@ -294,70 +294,63 @@
         <button>Напишите нам</button>
       </section>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="top-section">
-          <a class="footer-logo" href="#">DEVICE</a>
-          <div class="rigth-block footer-rigth-block">
-            <div class="btn-block button-entry">
-              <a href="#" type="button">
-                <img src="img/avatar-footer.png" alt="avatar">
-                <span class="enter">Войти</span>
-                <span class="escape d-none">Выход</span>
-              </a>
-            </div>
-            <div class="btn-block">
-              <a href="#" type="button">
-                <img src="img/compare-footer.png" alt="compare">
-                <span>Сравнить</span>
-              </a>
-            </div>
-            <div class="btn-block">
-              <a href="#" type="button">
-                <img src="img/basket-footer.png" alt="basket">
-                <span>Корзина</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="middle-section">
-          <p class="adress">г. Москва, ул. Строителей, 15</p>
-          <ul class="nav footer-nav">
-            <li><a href="#3">Доставка</a></li>
-            <li><a href="#3">Гарантия</a></li>
-            <li><a href="#5">Контакты</a></li>
-          </ul>
-          <div class="phone">
-            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          </div>
-        </div>
-        <div class="bottom-section">
-          <span class="footer-line"></span>
-          <ul class="footer-social">
-            <li>
-              <a class="social-button" href="https://www.facebook.com">
-                <span class="visually-hidden">Фейсбук</span>
-                <img src="img/faceboock.png" alt="faceboock">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="https://www.instagram.com">
-                <span class="visually-hidden">Инстаграм</span>
-                <img src="img/instagram.png" alt="instagram">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="https://twitter.com/">
-                <span class="visually-hidden">Твиттер</span>
-                <img src="img/Twitter.png" alt="Twitter">
-              </a>
-            </li>
-          </ul>
-          <img src="img/logo-html.png" width="27" height="35" alt="logo html">
-        </div>
-      </div>
-    </footer>
   </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="footer__top--logo" href="#">
+        <img src="img/footer_logo.svg" alt="логотип">
+      </a>
+      <div class="footer__top--rigth">
+        <a href="#" type="button">
+          <img src="img/footer_icon_user.svg" alt="аватар">
+          <span class="enter">Войти</span>
+        </a>
+        <a href="#" type="button">
+          <img src="img/footer_icon_chart.svg" alt="compare">
+          <span>Сравнить</span>
+        </a>
+        <a href="#" type="button">
+          <img src="img/footer_icon_cart.svg" alt="basket">
+          <span>Корзина</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <p class="footer__middle--adress">г. Москва, ул. Строителей, 15</p>
+      <ul class="footer__middle--nav">
+        <li><a href="#3">Доставка</a></li>
+        <li><a href="#3">Гарантия</a></li>
+        <li><a href="#5">Контакты</a></li>
+      </ul>
+      <div class="footer__middle--phone">
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer-line"></span>
+      <ul class="footer__bottom--list social" background="black">
+        <li class="social__item">
+          <a class="social__item--button" href="https://www.facebook.com">
+            <span hidden>Фейсбук</span>
+            <img src="img/simple-icons_facebook.svg" alt="faceboock">
+          </a>
+        </li>
+        <li class="socia__item">
+          <a class="social__item--button" href="https://www.instagram.com">
+            <span hidden>Инстаграм</span>
+            <img src="img/icon_instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item--button" href="https://twitter.com/">
+            <span hidden>Твиттер</span>
+            <img src="img/icon_witter.svg" alt="Twitter">
+          </a>
+        </li>
+      </ul>
+      <img src="img/logo-html.svg" width="27" height="35" alt="logo html">
+    </div>
+  </footer>
 </body>
 
 </html>
