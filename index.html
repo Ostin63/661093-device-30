@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <h1 hidden>Интернет-магазин "Дивайс"</h1>
+    <h1>Интернет-магазин "Дивайс"</h1>
     <a class="page-header__logo" href="#">
       <img src="img/logo.svg" alt="logo">
     </a>
@@ -47,7 +47,7 @@
           <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </div>
-      <ul class="catalog-products__nav-site">
+      <ul class="bottom-menu__nav-site">
         <li><a href="#3">Доставка</a></li>
         <li><a href="#3">Гарантия</a></li>
         <li><a href="#5">Контакты</a></li>
@@ -56,14 +56,14 @@
   </header>
   <main>
     <section>
-      <h2 hidden>Top slider</h2>
+      <h2>Top slider</h2>
       <ul class="top-slider">
         <li class="top-slider__list slider-list">
-          <div class="block-slider__item slider-block">
-            <div class="slider-block__img block-img">
+          <div class="slider-list__item slider-item">
+            <div class="slider-item__img block-img">
               <img src="img/slider_1.png" width="384" height="486" alt="slider-1">
             </div>
-            <div class="slider-block__info block-info">
+            <div class="slider-item__info block-info">
               <p><span></span>01</p>
               <h3>Делай селфи, как&nbsp;Бен Стиллер!</h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине.
@@ -85,11 +85,11 @@
           </div>
         </li>
         <li class="top-slider__list slider-list">
-          <div class="block-slider__item slider-item">
-            <div class="slider-block__img block-img">
+          <div class="slider-list__item slider-item">
+            <div class="slider-item__img block-img">
               <img src="img/slider_2.png" width="345" height="485" alt="slider-2">
             </div>
-            <div class="slider-block__info block-info">
+            <div class="slider-item__info block-info">
               <p><span></span>02</p>
               <h3>Худеем правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -111,11 +111,11 @@
           </div>
         </li>
         <li class="top-slider__list slider-list">
-          <div class="block-slider__item slider-item">
-            <div class="slider-block__img block-img">
+          <div class="slider-list__item slider-item">
+            <div class="slider-item__img block-img">
               <img src="img/slider_3.png" width="526" height="334" alt="slider-3">
             </div>
-            <div class="slider-block__info block-info">
+            <div class="slider-item__info block-info">
               <p><span></span>03</p>
               <h3>Порхает&nbsp;как&nbsp;бабочка, жалит как пчела!</h3>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -144,7 +144,7 @@
       </ul>
     </section>
     <section class="popular">
-      <h2 hidden>Популярные продукты</h2>
+      <h2>Популярные продукты</h2>
       <ul class="popular__list popular-product">
         <li class="popular-product__item">
           <a href="#">
@@ -185,22 +185,22 @@
       </ul>
     </section>
     <section class="page-services" id="3">
-      <h2 hidden>Сервисы</h2>
-      <div class="services">
-        <ul class="services__button--list">
-          <li class="services__button--item">
+      <h2>Сервисы</h2>
+      <div class="page-services__services services">
+        <ul class="services__buttons services-buttons">
+          <li class="services-buttons__item">
             <button>Доставка</button>
           </li>
-          <li class="services__button--item">
+          <li class="services-buttons__item">
             <button>Гарантия</button>
           </li>
-          <li class="services__button--item">
+          <li class="services-buttons__item">
             <button>Кредит</button>
           </li>
         </ul>
         <span class="plank"></span>
-        <ul class="services__slider">
-          <li class="services__slider--item service">
+        <ul class="services__slider services-slider">
+          <li class="services-slider__item service">
             <div class="service__info">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -211,7 +211,7 @@
               <img src="img/services-1.png" width="136" height="164" alt="delivery">
             </div>
           </li>
-          <li class="services__slider--item service">
+          <li class="services-slider__item service">
             <div class="service__info">
               <h3>Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
@@ -222,7 +222,7 @@
               <img src="img/services-2.png" width="171" height="194" alt="warranty">
             </div>
           </li>
-          <li class="services__slider--item service">
+          <li class="services-slider__item service">
             <div class="service__info">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
@@ -235,26 +235,26 @@
         </ul>
       </div>
     </section>
-    <section class="popular-brands brands">
-      <h2 hidden>Популярные производители</h2>
-      <ul class="brands--list">
-        <li class="brands--item">
-          <a class="brands--imges" href="#">
+    <section class="popular-brands">
+      <h2>Популярные производители</h2>
+      <ul class="popular-brands__list brands">
+        <li class="brands__item brands-item">
+          <a class="brands-item__imges" href="#">
             <img src="img/brand_1.png" width="260" height="100" alt="logo popular">
           </a>
         </li>
-        <li class="brands--item">
-          <a class="brands--imges" href="#">
+        <li class="brands__item brands-item">
+          <a class="brands-item__imges" href="#">
             <img src="img/brand_2.png" width="260" height="100" alt="logo popular">
           </a>
         </li>
-        <li class="brands--item">
-          <a class="brands--imges" href="#">
+        <li class="brands__item brands-item">
+          <a class="brands-item__imges" href="#">
             <img src="img/brand_3.png" width="260" height="100" alt="logo popular">
           </a>
         </li>
-        <li class="brands--item">
-          <a class="brands--imges" href="#">
+        <li class="brands__item brands-item">
+          <a class="brands-item__imges" href="#">
             <img src="img/brand_4.png" width="260" height="100" alt="logo popular">
           </a>
         </li>
@@ -262,7 +262,7 @@
     </section>
     <div class="promo-contacts" id="5">
       <section class="promo">
-        <span class="promo-contacts--line"></span>
+        <span class="promo-contacts-line"></span>
         <h3>О нас</h3>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
@@ -281,7 +281,7 @@
         <button>Подробнее о нас</button>
       </section>
       <section class="contacts">
-        <span class="promo-contacts--line"></span>
+        <span class="promo-contacts-line"></span>
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
@@ -293,11 +293,11 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__top">
-      <a class="footer__top--logo" href="#">
+    <div class="footer__top footer-top">
+      <a class="footer-top__logo" href="#">
         <img src="img/footer_logo.svg" alt="логотип">
       </a>
-      <div class="footer__top--rigth">
+      <div class="footer-top__rigth">
         <a href="#">
           <img src="img/footer_icon_user.svg" alt="аватар">
           <span class="enter">Войти</span>
@@ -312,35 +312,35 @@
         </a>
       </div>
     </div>
-    <div class="footer__middle">
-      <p class="footer__middle--adress">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer__middle--nav">
+    <div class="footer__middle footer-middle">
+      <p class="footer-middle__adress">г. Москва, ул. Строителей, 15</p>
+      <ul class="footer-middle__nav">
         <li><a href="#3">Доставка</a></li>
         <li><a href="#3">Гарантия</a></li>
         <li><a href="#5">Контакты</a></li>
       </ul>
-      <div class="footer__middle--phone">
+      <div class="footer-middle__phone">
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
     </div>
-    <div class="footer__bottom">
+    <div class="footer__bottom footer-bottom">
       <span class="footer-line"></span>
-      <ul class="footer__bottom--list social">
-        <li class="social__item">
-          <a class="social__item--button" href="https://www.facebook.com">
-            <span hidden>Фейсбук</span>
+      <ul class="footer-bottom__list social">
+        <li class="social__item social-item">
+          <a class="social-item__button" href="https://www.facebook.com">
+            <span>Фейсбук</span>
             <img src="img/simple-icons_facebook.svg" alt="faceboock">
           </a>
         </li>
-        <li class="socia__item">
-          <a class="social__item--button" href="https://www.instagram.com">
-            <span hidden>Инстаграм</span>
+        <li class="social__item social-item">
+          <a class="social-item__button" href="https://www.instagram.com">
+            <span>Инстаграм</span>
             <img src="img/icon_instagram.svg" alt="instagram">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__item--button" href="https://twitter.com/">
-            <span hidden>Твиттер</span>
+        <li class="social__item social-item">
+          <a class="social-item__button" href="https://twitter.com/">
+            <span>Твиттер</span>
             <img src="img/icon_witter.svg" alt="Twitter">
           </a>
         </li>

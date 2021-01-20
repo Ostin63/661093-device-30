@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <h1 hidden>Интернет-магазин "Дивайс"</h1>
+    <h1>Интернет-магазин "Дивайс"</h1>
     <a class="page-header__logo" href="index.html">
       <img src="img/logo.svg" alt="logo">
     </a>
@@ -38,7 +38,7 @@
         </span>
       </button>
       <div class="bottom-menu__catalog catalog-products">
-        <ul class="catalog-products__nav" hidden>
+        <ul class="catalog-products__nav">
           <li><a href="#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="catalog.html">Экшн-камеры</a></li>
@@ -47,7 +47,7 @@
           <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </div>
-      <ul class="catalog-products__nav-site">
+      <ul class="bottom-menu__nav-site">
         <li><a href="#3">Доставка</a></li>
         <li><a href="#3">Гарантия</a></li>
         <li><a href="#5">Контакты</a></li>
@@ -56,20 +56,26 @@
   </header>
   <main>
     <section class="page-catalog">
-      <h1 hidden>Каталог товаров</h1>
+      <h1>Каталог товаров</h1>
       <div class="page-catalog__top-block top-block">
         <h2>Моноподы для селфи</h2>
-        <div class="top-block__store store-catalog">
-          <a class="store-catalog__head" href="#nohere">Главная</a>
-          <img src="img/icon_arrow_nav.svg" alt="стрелочка">
-          <a class="store-catalog__product" href="#nohere">Каталог товаров</a>
-          <img src="img/icon_arrow_nav.svg" alt="стрелочка">
-          <a class="store-catalog__monopods" href="#nohere">Моноподы для селфи</a>
-        </div>
+        <ul class="top-block__store store-catalog">
+          <li>
+            <a class="store-catalog__head" href="#nohere">Главная</a>
+            <span class="icon-arrow"></span>
+          </li>
+          <li>
+            <a class="store-catalog__product" href="#nohere">Каталог товаров</a>
+            <<span class="icon-arrow"></span>
+          </li>
+          <li>
+            <a class="store-catalog__monopods" href="#nohere">Моноподы для селфи</a>
+          </li>
+        </ul>
       </div>
-      <div class="page-catalog__product">
-        <section class="page-catalog__product--filters filters">
-          <h2 hidden>Фильтр шаблонов</h2>
+      <div class="page-catalog__product catalog-product">
+        <section class="catalog-product__filters filters">
+          <h2>Фильтр шаблонов</h2>
           <div class="main-filter">
             <h3>фильтр:</h3>
           </div>
@@ -77,14 +83,16 @@
             <fieldset class="filters__form--range range">
               <legend class="range__title">Стоимость</legend>
               <div class="range__filter">
-                <div class="range__control"></div>
-                <label>
-                  <span class="range__min">от</span>
-                  <input class="range__min-price" name="min-price" type="text">
+                <label for="range">
+                  <input class="range__control" type="range" min="0" max="3000" id="range">
                 </label>
-                <label>
+                <label for="min-price">
+                  <span class="range__min">от</span>
+                  <input class="range__min-price" name="min-price" type="text" id="min-price">
+                </label>
+                <label for="max-price">
                   <span class="range__max">до</span>
-                  <input class="range__max-price" name="max-price" type="text">
+                  <input class="range__max-price" name="max-price" type="text" id="max-price">
                 </label>
               </div>
             </fieldset>
@@ -144,17 +152,17 @@
                   <a href="#nohere">По популяронсти</a>
                 </li>
               </ul>
-              <h3 hidden>Направление</h3>
+              <h3>Направление</h3>
               <ul class="sorting__direction">
                 <li class="sorting__direction--up">
                   <a href="#nohere">
-                    <span hidden>По убыванию</span>
+                    <span>По убыванию</span>
                     <img src="img/up.svg" alt="вверх">
                   </a>
                 </li>
                 <li class="sorting-direction__down">
                   <a href="#nohere">
-                    <span hidden>По возгоранию</span>
+                    <span>По возрастанию</span>
                     <img src="img/down.svg" alt="вниз">
                   </a>
                 </li>
@@ -162,7 +170,7 @@
             </div>
           </section>
           <section class="catalog-items">
-            <h2 hidden>Каталог</h2>
+            <h2>Каталог</h2>
             <ul class="catalog-items__list catalog-list">
               <li class="catalog-item">
                 <img class="image" width="360" height="380" src="img/product_1.png" alt="Любительская селфи-палка">
@@ -224,11 +232,11 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__top">
-      <a class="footer__top--logo" href="index.html">
+    <div class="footer__top footer-top">
+      <a class="footer-top__logo" href="index.html">
         <img src="img/footer_logo.svg" alt="логотип">
       </a>
-      <div class="footer__top--rigth">
+      <div class="footer-top__rigth">
         <a href="#">
           <img src="img/footer_icon_user.svg" alt="аватар">
           <span class="enter">Войти</span>
@@ -243,35 +251,35 @@
         </a>
       </div>
     </div>
-    <div class="footer__middle">
-      <p class="footer__middle--adress">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer__middle--nav">
+    <div class="footer__middle footer-middle">
+      <p class="footer-middle__adress">г. Москва, ул. Строителей, 15</p>
+      <ul class="footer-middle__nav">
         <li><a href="#3">Доставка</a></li>
         <li><a href="#3">Гарантия</a></li>
         <li><a href="#5">Контакты</a></li>
       </ul>
-      <div class="footer__middle--phone">
+      <div class="footer-middle__phone">
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
     </div>
-    <div class="footer__bottom">
+    <div class="footer__bottom footer-bottom">
       <span class="footer-line"></span>
-      <ul class="footer__bottom--list social">
-        <li class="social__item">
-          <a class="social__item--button" href="https://www.facebook.com">
-            <span hidden>Фейсбук</span>
+      <ul class="footer-bottom__list social">
+        <li class="social__item social-item">
+          <a class="social-item__button" href="https://www.facebook.com">
+            <span>Фейсбук</span>
             <img src="img/simple-icons_facebook.svg" alt="faceboock">
           </a>
         </li>
-        <li class="socia__item">
-          <a class="social__item--button" href="https://www.instagram.com">
-            <span hidden>Инстаграм</span>
+        <li class="social__item social-item">
+          <a class="social-item__button" href="https://www.instagram.com">
+            <span>Инстаграм</span>
             <img src="img/icon_instagram.svg" alt="instagram">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__item--button" href="https://twitter.com/">
-            <span hidden>Твиттер</span>
+        <li class="social__item social-item">
+          <a class="social-item__button" href="https://twitter.com/">
+            <span>Твиттер</span>
             <img src="img/icon_witter.svg" alt="Twitter">
           </a>
         </li>
