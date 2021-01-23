@@ -8,45 +8,50 @@
 
 <body>
   <header class="page-header">
-    <h1>Интернет-магазин "Дивайс"</h1>
     <a class="page-header__logo" href="index.html">
       <img src="img/logo.svg" alt="logo">
     </a>
     <div class="page-header__top top-menu">
-      <form class="form-search search" action="#">
-        <img src="img/icon_search.svg" alt="search">
+      <form class="form-search search" action="https://echo.htmlacademy.ru/">
+        <span class="icon-lens"></span>
         <input class="search__text" type="text" placeholder="Поиск по сайту">
         <button class="search__button" type="submit">Найти</button>
       </form>
       <a href="#">
-        <img src="img/icon_user.svg" alt="аватар">
+        <span class="icon-user"></span>
         <span class="enter">Войти</span>
       </a>
       <a href="#">
-        <img src="img/icon_chart.svg" alt="сравнение">
+        <span class="icon-chart"></span>
         <span>Сравнить</span>
       </a>
       <a href="#">
-        <img src="img/icon_cart.svg" alt="корзина">
+        <span class="icon-basket"></span>
         <span>Корзина</span>
       </a>
     </div>
     <nav class="page-header__bottom bottom-menu">
-      <a class="bottom-menu__button-catalog" href="#">Каталог товаров</a>
-      <div class="bottom-menu__catalog catalog-products">
-        <ul class="catalog-products__nav">
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a>Экшн-камеры</a></li>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
-      </div>
-      <ul class="bottom-menu__nav-site">
-        <li><a href="index.html#3">Доставка</a></li>
-        <li><a href="index.html#3">Гарантия</a></li>
-        <li><a href="index.html#5">Контакты</a></li>
+      <ul class="bottom-menu__nav-site nav-site">
+        <li class="nav-site__item nav-item">
+          <a class="nav-item__button-catalog">Каталог товаров</a>
+          <ul class="nav-item__catalog-nav">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a>Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="nav-site__item">
+          <a href="index.html#3">Доставка</a>
+        </li>
+        <li class="nav-site__item nav-item">
+          <a href="index.html#3">Гарантия</a>
+        </li>
+        <li class="nav-site__item nav-item">
+          <a href="index.html#5">Контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
