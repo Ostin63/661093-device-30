@@ -9,12 +9,13 @@
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+  <header class="page-header  container">
+    <a class="page-header__logo link" href="index.html">
       <img class="picture" src="img/logo.svg" alt="Логотип Интернет-магазина Девайс">
     </a>
     <div class="page-header__top top-menu">
@@ -26,40 +27,42 @@
         <input class="search__text" type="text" placeholder="Поиск по сайту" id="search">
         <button class="search__button" type="submit">Найти</button>
       </form>
-      <a class="" href="#">
-        <span class="icon-user"></span>
-        <span class="enter">Войти</span>
-      </a>
-      <a class="" href="#">
-        <span class="icon-chart"></span>
-        <span>Сравнить</span>
-      </a>
-      <a class="" href="#">
-        <span class="icon-basket"></span>
-        <span>Корзина</span>
-      </a>
+      <div class="top-menu__right-block right-block">
+        <a class="right-block__button button-link style link" href="#">
+          <span class="button-link__icon icon-user"></span>
+          <span class="enter">Войти</span>
+        </a>
+        <a class="right-block__button button-link style link" href="#">
+          <span class="button-link__icon icon-chart"></span>
+          <span>Сравнить</span>
+        </a>
+        <a class="right-block__button button-link style link" href="#">
+          <span class="button-link__icon icon-basket"></span>
+          <span>Корзина</span>
+        </a>
+      </div>
     </div>
     <nav class="page-header__bottom bottom-menu">
-      <ul class="bottom-menu__nav-site nav-site">
+      <ul class="bottom-menu__nav-site nav-site list">
         <li class="nav-site__item nav-item">
-          <a class="nav-item__button-catalog">Каталог товаров</a>
-          <ul class="nav-item__catalog-nav">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a>Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+          <a class="nav-item__button-catalog style link">Каталог товаров</a>
+          <ul class="nav-item__catalog-nav list">
+            <li><a class="style link" href="#">Виртуальная реальность</a></li>
+            <li><a class="style link" href="#">Моноподы для селфи</a></li>
+            <li><a class="style link">Экшн-камеры</a></li>
+            <li><a class="style link" href="#">Фитнес-браслеты</a></li>
+            <li><a class="style link" href="#">Умные часы</a></li>
+            <li><a class="style link" href="#">Квадрокоптеры</a></li>
           </ul>
         </li>
         <li class="nav-site__item">
-          <a href="index.html#3">Доставка</a>
+          <a class="style link" href="index.html#3">Доставка</a>
         </li>
         <li class="nav-site__item nav-item">
-          <a href="index.html#3">Гарантия</a>
+          <a class="style link" href="index.html#3">Гарантия</a>
         </li>
         <li class="nav-site__item nav-item">
-          <a href="index.html#5">Контакты</a>
+          <a class="style link" href="index.html#5">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -216,7 +219,8 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <img class="picture" width="360" height="380" src="img/product_4.png" alt="Селфи-палка «Следуй за мной»">
+                <img class="picture" width="360" height="380" src="img/product_4.png"
+                  alt="Селфи-палка «Следуй за мной»">
                 <div class="order">
                   <button>В корзину</button>
                   <button>Добавить к сравнению</button>
@@ -241,59 +245,61 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__top footer-top">
-      <a class="footer-top__logo" href="index.html">
-        <img class="picture" src="img/footer_logo.svg" alt="Логотип Интернет-магазина Девайс">
-      </a>
-      <div class="footer-top__rigth">
-        <a href="#">
-          <span class="icon-user-footer"></span>
-          <span class="enter">Войти</span>
+  <footer class="page-footer">
+    <div class="page-footer__container footer container">
+      <div class="footer__top footer-top">
+        <a class="footer-top__logo link" href="index.html">
+          <img class="picture" src="img/footer_logo.svg" alt="Логотип Интернет-магазина Девайс">
         </a>
-        <a href="#">
-          <span class="icon-chart-footer"></span>
-          <span>Сравнить</span>
-        </a>
-        <a href="#">
-          <span class="icon-basket-footer"></span>
-          <span>Корзина</span>
+        <div class="footer-top__rigth">
+          <a class="footer-rigth__button button-link style link" href="#">
+            <span class="icon-user-footer"></span>
+            <span class="enter">Войти</span>
+          </a>
+          <a class="footer-rigth__button button-link style link" href="#">
+            <span class="icon-chart-footer"></span>
+            <span>Сравнить</span>
+          </a>
+          <a class="footer-rigth__button button-link style link" href="#">
+            <span class="icon-basket-footer"></span>
+            <span>Корзина</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__middle footer-middle">
+        <p class="footer-middle__adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-middle__nav list">
+          <li><a class="style link" href="index.html#3">Доставка</a></li>
+          <li><a class="style link" href="index.html#3">Гарантия</a></li>
+          <li><a class="style link" href="index.html#5">Контакты</a></li>
+        </ul>
+        <div class="footer-middle__phone">
+          <a class="style link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+      </div>
+      <div class="footer__bottom footer-bottom">
+        <span class="footer-line"></span>
+        <ul class="footer-bottom__list social list">
+          <li class="social__item social-item">
+            <a class="social-item__button link" href="https://www.facebook.com">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item social-item">
+            <a class="social-item__button link" href="https://www.instagram.com">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item social-item">
+            <a class="social-item__button link" href="https://twitter.com/">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+        <a class="style link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="picture" src="img/logo-html.svg" width="27" height="35" alt="Логотип html Академии">
         </a>
       </div>
-    </div>
-    <div class="footer__middle footer-middle">
-      <p class="footer-middle__adress">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-middle__nav">
-        <li><a href="index.html#3">Доставка</a></li>
-        <li><a href="index.html#3">Гарантия</a></li>
-        <li><a href="index.html#5">Контакты</a></li>
-      </ul>
-      <div class="footer-middle__phone">
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      </div>
-    </div>
-    <div class="footer__bottom footer-bottom">
-      <span class="footer-line"></span>
-      <ul class="footer-bottom__list social">
-        <li class="social__item social-item">
-          <a class="social-item__button" href="https://www.facebook.com">
-            <span>Фейсбук</span>
-          </a>
-        </li>
-        <li class="social__item social-item">
-          <a class="social-item__button" href="https://www.instagram.com">
-            <span>Инстаграм</span>
-          </a>
-        </li>
-        <li class="social__item social-item">
-          <a class="social-item__button" href="https://twitter.com/">
-            <span>Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="picture" src="img/logo-html.svg" width="27" height="35" alt="Логотип html Академии">
-      </a>
     </div>
   </footer>
 </body>
