@@ -181,6 +181,11 @@ body {
   color: var(--basic-black);
 }
 
+.page-header__logo svg {
+  width: 163px;
+  height: 35px;
+}
+
 .top-menu__search {
   display: flex;
 }
@@ -507,6 +512,11 @@ body {
 
 .footer-top__logo {
   color: var(--special-yellow-dark);
+}
+
+.footer-top__logo svg {
+  width: 163px;
+  height: 35px;
 }
 
 .icon-user-footer {
