@@ -294,3 +294,30 @@ body {
 }
 
 /*popular*/
+
+.popular-item__image {
+  width: 160px;
+  height: 160px;
+  display: block;
+  background: var(--special-yellow);
+}
+
+.popular-item__image svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.popular-item__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+/*Services*/
+
+.page-services {
+  background: linear-gradient(180deg, var(--basic-white) 115px, var(--basic-grey-light) 115px);
+}
