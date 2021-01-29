@@ -581,6 +581,10 @@ body {
   background: #F6DADA;
 }
 
+.feedback-form__button {
+  width: 200px;
+}
+
 /*Catalog*/
 
 .top-block h2 {
