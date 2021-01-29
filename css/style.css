@@ -321,3 +321,69 @@ body {
 .page-services {
   background: linear-gradient(180deg, var(--basic-white) 115px, var(--basic-grey-light) 115px);
 }
+
+.service__img {
+  width: 171px;
+  height: 194px;
+}
+
+.service__info h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.service__info p {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.services-item__button {
+  width: 160px;
+}
+
+/*Popular brands*/
+
+/*Promo contacts*/
+
+.promo__heading,
+.contacts__heading {
+  margin-bottom: 50px;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.promo p, .contacts p {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.promo__heading,
+.contacts__heading {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.promo__carriers strong {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 800;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.promo__button, .contacts__button {
+  width: 260px;
+}
+
+.contacts__map {
+  background: var(--basic-grey-light);
+}
