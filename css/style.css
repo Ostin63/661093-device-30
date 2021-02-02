@@ -458,7 +458,7 @@
   height: 7px;
   margin-top: 18px;
   display: block;
-  background: #ffffff;
+  background: var(--basic-white);
 }
 
 .block-info__phrase {
