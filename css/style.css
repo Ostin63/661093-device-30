@@ -505,62 +505,60 @@
 
 .popular__list {
   margin-top: 84px;
-  /*display: flex;
-  justify-content: space-between;*/
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 40px;
 }
 
-.popular-product__item {
-  width: 160px;
-}
-
 .popular-item__image {
   width: 160px;
-  height: 160px;
+  height: auto;
   display: block;
-  background-color: var(--special-yellow);
 }
 
-.popular-item span {
+.popular-item__image span {
   display: block;
-  width: 160px;
-  height: 160px;
-}
-
-.item-image__virtuality {
-  background: var(--popular-virtuality) 0 0 no-repeat;
-}
-
-.item-image__monnopods {
-  background: var(--popular-monnopods) 0 0 no-repeat;
-}
-
-.item-image__action {
-  background: var(--popular-action) 0 0 no-repeat;
-}
-
-.item-image__braslet {
-  background: var(--popular-braslet) 0 0 no-repeat;
-}
-
-.item-image__watch {
-  background: var(--popular-watch) 0 0 no-repeat;
-}
-
-.item-image__quadrocoptters  {
-  background: var(--popular-quadrocoptters) 0 0 no-repeat;
-}
-
-.popular-item__title {
   margin-top: 38px;
   font-style: normal;
+  text-decoration: none;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
   font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.item-image__link--icon_virtual::before {
+  background: var(--popular-virtuality) 0 0 no-repeat;
+}
+
+.item-image__link--icon_monnopods::before {
+  background: var(--popular-monnopods) 0 0 no-repeat;
+}
+
+.item-image__link--icon_action::before {
+  background: var(--popular-action) 0 0 no-repeat;
+}
+
+.item-image__link--icon_braslet::before {
+  background: var(--popular-braslet) 0 0 no-repeat;
+}
+
+.item-image__link--icon_watch::before {
+  background: var(--popular-watch) 0 0 no-repeat;
+}
+
+.item-image__link--icon_quadrocoptters::before {
+  background: var(--popular-quadrocoptters) 0 0 no-repeat;
+}
+
+.popular-item__image::before {
+  display: block;
+  content: "";
+  width: 160px;
+  height: 160px;
+  background-color: var(--special-yellow);
 }
 
 /*Services*/
