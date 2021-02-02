@@ -892,11 +892,7 @@
 }
 
 .feedback-item__field:focus {
-  border: 2px solid #F7E296;
-}
-
-.feedback-item__field.error {
-  background: #F6DADA;
+  border: 2px solid var(--special-yellow);
 }
 
 .feedback-form__button {
@@ -1078,7 +1074,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}.catalog__item-info {
+}
+
+.catalog__item-info {
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
