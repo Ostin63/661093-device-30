@@ -90,7 +90,7 @@
   height: 100%;
 }
 
-body {
+.page-body {
   min-width: 1160px;
   margin: 0 auto;
   padding: 0;
@@ -684,6 +684,7 @@ body {
 
 .promo-contacts {
   margin-top: 90px;
+  margin-bottom: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -728,7 +729,6 @@ body {
 /*footer*/
 
 .page-footer {
-  margin-top: 80px;
   background: var(--basic-dark);
   color: var(--basic-white);
 }
@@ -835,6 +835,7 @@ body {
 .footer-bottom__logo-html {
   justify-self: end;
 }
+
 /*Modal map*/
 
 .close {
@@ -904,36 +905,84 @@ body {
 
 /*Catalog*/
 
-.top-block h2 {
+.background-filters {
+  background: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 36.8%, #ebebeb 36.8%, #ebebeb 100%), linear-gradient(to right, #efefef 0%, #efefef 36.8%, var(--basic-white) 36.8%, var(--basic-white) 100%);
+  background-size: 100% 70px, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.page-catalog__title {
   font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-left: 60px;
   font-size: 47px;
   line-height: 58px;
   font-family: "Gilroy", "Arial", sans-serif;
 }
 
+.page-catalog__store {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 40px;
+}
+
 .store-catalog__item {
+  display: flex;
   font-size: 14px;
   line-height: 19px;
   font-weight: 300;
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .icon-arrow {
   width: 12px;
   height: 12px;
+  align-self: center;
   display: block;
   background: var(--icon-arrow) 0 0 no-repeat;
 }
 
 /*Filteres*/
 
+.catalog-product__filters {
+  padding-left: 60px;
+  grid-column: 1 / 2;
+}
+
+.catalog-product__sorting {
+  display: flex;
+  grid-column: 2 / -1;
+}
+
+.page-catalog__product {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 328px auto;
+  grid-template-rows: 70px auto;
+}
+
 .main-filter, .sorting__contents {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.sorting__contents {
+  padding-left: 70px;
+}
+
+.filters__form {
+  width: 200px;
 }
 
 .filters-form legend {
@@ -1019,7 +1068,17 @@ body {
 
 /*Catalog*/
 
-.catalog__item-info {
+.catalog-product__items {
+  padding-top: 70px;
+  padding-left: 70px;
+  grid-column: 2 / -1;
+}
+
+.catalog-items__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}.catalog__item-info {
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
