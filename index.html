@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -28,73 +28,69 @@
         <input class="search__text" type="text" placeholder="Поиск по сайту" id="search">
         <button class="search__button" type="submit">Найти</button>
       </form>
-      <div class="top-menu__right-block right-block">
-        <a class="right-block__button button-link style link" href="#">
-          <span class="button-link__icon icon-user"></span>
-          <span class="enter">Войти</span>
-        </a>
-        <a class="right-block__button button-link style link" href="#">
-          <span class="button-link__icon icon-chart"></span>
-          <span>Сравнить</span>
-        </a>
-        <a class="right-block__button button-link style link" href="#">
-          <span class="button-link__icon icon-basket"></span>
-          <span>Корзина</span>
-        </a>
-      </div>
+      <a class="top-menu__button button-link style link" href="#">
+        <span class="button-link__icon icon-user"></span>
+        <span class="enter">Войти</span>
+      </a>
+      <a class="top-menu__button button-link style link" href="#">
+        <span class="button-link__icon icon-chart"></span>
+        <span>Сравнить</span>
+      </a>
+      <a class="top-menu__button button-link style link" href="#">
+        <span class="button-link__icon icon-basket"></span>
+        <span>Корзина</span>
+      </a>
     </div>
-    <nav class="page-header__bottom bottom-menu">
-      <ul class="bottom-menu__nav-site nav-site list">
-        <li class="nav-site__item nav-item">
-          <a class="nav-item__button-catalog style link">Каталог товаров</a>
-          <ul class="nav-item__catalog-nav list">
-            <li><a class="style link" href="#">Виртуальная реальность</a></li>
-            <li><a class="style link" href="catalog.html">Моноподы для селфи</a></li>
-            <li><a class="style link" href="#">Экшн-камеры</a></li>
-            <li><a class="style link" href="#">Фитнес-браслеты</a></li>
-            <li><a class="style link" href="#">Умные часы</a></li>
-            <li><a class="style link" href="#">Квадрокоптеры</a></li>
-          </ul>
-        </li>
-        <li class="nav-site__item">
-          <a class="style link" href="#3">Доставка</a>
-        </li>
-        <li class="nav-site__item nav-item">
-          <a class="style link" href="#3">Гарантия</a>
-        </li>
-        <li class="nav-site__item nav-item">
-          <a class="style link" href="#5">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+    <ul class="page-header__nav-site  nav-site list">
+      <li class="nav-site__item nav-item">
+        <a class="nav-item__button-catalog style link">Каталог товаров</a>
+        <ul class="nav-item__catalog-nav list">
+          <li><a class="style link" href="#">Виртуальная реальность</a></li>
+          <li><a class="style link" href="catalog.html">Моноподы для селфи</a></li>
+          <li><a class="style link" href="#">Экшн-камеры</a></li>
+          <li><a class="style link" href="#">Фитнес-браслеты</a></li>
+          <li><a class="style link" href="#">Умные часы</a></li>
+          <li><a class="style link" href="#">Квадрокоптеры</a></li>
+        </ul>
+      </li>
+      <li class="nav-site__item">
+        <a class="style link" href="#3">Доставка</a>
+      </li>
+      <li class="nav-site__item nav-item">
+        <a class="style link" href="#3">Гарантия</a>
+      </li>
+      <li class="nav-site__item nav-item">
+        <a class="style link" href="#5">Контакты</a>
+      </li>
+    </ul>
   </header>
   <main>
     <h1 class="visually-hidden">Интернет-магазин "Дивайс"</h1>
     <section class="top-section  container">
       <h2 class="visually-hidden">Top slider</h2>
       <ul class="top-section__slider slider-list list">
-        <li class="slider-list__item slider-item">
+        <li class="slider-list__item slider-item show-slider">
           <div class="slider-item__img block-img">
             <img class="picture" src="img/slider_1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
           <div class="slider-item__info block-info">
-            <span class="block-info__number"></span>
+            <span class="block-info__line"></span>
             <p class="block-info__phrase">Делай селфи, как&nbsp;Бен Стиллер!</p>
-            <p class="block-info__text">Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="block-info__text">Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь,
+              Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="block-info__button style button" href="#">
               <span class="button__text">Подробнее</span>
             </a>
             <table class="block-info__options">
               <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
-              <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
               </tr>
             </table>
           </div>
@@ -104,7 +100,7 @@
             <img class="picture" src="img/slider_2.png" width="345" height="485" alt="Умные часы">
           </div>
           <div class="slider-item__info block-info">
-            <span class="block-info__number"></span>
+            <span class="block-info__line"></span>
             <p class="block-info__phrase">Худеем правильно!</p>
             <p class="block-info__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
@@ -113,14 +109,14 @@
             </a>
             <table class="block-info__options">
               <tr>
-                <th>Без подзарядки</th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr>
                 <td>48&nbsp;часов</td>
                 <td></td>
                 <td></td>
+              </tr>
+              <tr>
+                <th>Без подзарядки</th>
+                <th></th>
+                <th></th>
               </tr>
             </table>
           </div>
@@ -130,7 +126,7 @@
             <img class="picture" src="img/slider_3.png" width="526" height="334" alt="Квадрокоптер">
           </div>
           <div class="slider-item__info block-info">
-            <span class="block-info__number"></span>
+            <span class="block-info__line"></span>
             <p class="block-info__phrase">Порхает&nbsp;как&nbsp;бабочка, жалит как пчела!</p>
             <p class="block-info__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
@@ -139,14 +135,14 @@
             </a>
             <table class="block-info__options">
               <tr>
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-                <th></th>
-              </tr>
-              <tr>
                 <td>800 м</td>
                 <td>50 м</td>
                 <td></td>
+              </tr>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+                <th></th>
               </tr>
             </table>
           </div>
@@ -201,7 +197,7 @@
     </section>
     <section class="page-services" id="3">
       <h2 class="visually-hidden">Сервисы</h2>
-      <div class="page-services__services services  container">
+      <div class="page-services__services services container">
         <ul class="services__buttons services-buttons list">
           <li class="services-buttons__item services-item service-button-active">
             <button class="services-item__button button">
@@ -219,9 +215,9 @@
             </button>
           </li>
         </ul>
-        <span class="plank"></span>
+        <span class="services__plank"></span>
         <ul class="services__slider services-slider list">
-          <li class="services-slider__item service">
+          <li class="services-slider__item service active-service">
             <div class="service__info">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -250,7 +246,7 @@
         </ul>
       </div>
     </section>
-    <section class=" container">
+    <section class="popular-brands container">
       <h2 class="visually-hidden">Популярные производители</h2>
       <ul class="popular-brands__list brands list">
         <li class="brands__item brands-item">
@@ -368,7 +364,7 @@
             </a>
           </li>
         </ul>
-        <a class="style link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="footer-bottom__logo-html style link" href="https://htmlacademy.ru/intensive/htmlcss">
           <img class="picture" src="img/logo-html.svg" width="27" height="35" alt="Логотип html Академии">
         </a>
       </div>
