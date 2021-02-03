@@ -382,7 +382,6 @@
   grid-template-areas:
     "a d f . . ."
     "b e . . . ."
-
     "c . . . . .";
   box-sizing: border-box;
   z-index: 10;
