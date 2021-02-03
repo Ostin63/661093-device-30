@@ -585,6 +585,10 @@
   background: var(--popular-braslet) 0 0 no-repeat;
 }
 
+.item-image__link--icon_braslet span {
+  letter-spacing: 0;
+}
+
 .item-image__link--icon_watch::after {
   background: var(--popular-watch) 0 0 no-repeat;
 }
