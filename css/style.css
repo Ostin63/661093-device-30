@@ -29,7 +29,6 @@
 
 @font-face {
   font-family: "Gilroy";
-  font-family: "Gilroy";
   font-weight: 300;
   font-style: normal;
   src: local("Gilroy"),
@@ -1527,17 +1526,18 @@
 }
 
 .bluetooth-category__option label::before {
-  width: 20px;
-  height: 20px;
-  top: -2px;
+  width: 24px;
+  height: 24px;
+  top: 0;
   left: -42px;
   border: 2px solid var(--basic-black);
+  box-sizing: border-box;
 }
 
 .bluetooth-category__option input:checked+label::after {
   width: 8px;
   height: 8px;
-  top: 6px;
+  top: 8px;
   left: -34px;
   background: var(--basic-black);
 }
