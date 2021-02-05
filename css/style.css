@@ -139,8 +139,7 @@
   height: auto;
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   opacity: 0.6;
 }
 
@@ -470,14 +469,12 @@
   margin-left: 29px;
 }
 
-.slider-list__item:nth-child(2)
-.slider-item__img {
+.slider-list__item:nth-child(2) .slider-item__img {
   margin-top: 11px;
   margin-left: 56px;
 }
 
-.slider-list__item:nth-child(3)
-.slider-item__img {
+.slider-list__item:nth-child(3) .slider-item__img {
   margin-top: 67px;
   margin-left: -30px;
 }
@@ -840,8 +837,7 @@
   font-family: "Gilroy", "Arial", sans-serif;
 }
 
-.promo__button,
-.contacts__button {
+.promo__button, .contacts__button {
   width: 260px;
   margin-top: 70px;
 }
@@ -1343,22 +1339,18 @@
   background: transparent;
 }
 
+/*Pagination catalogs*/
+
 .catalog-items__select {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 75px;
   display: grid;
-  grid-template-columns: 1fr repeat(3, min-content) 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   background: var(--special-grey-catalog);
 }
 
-.pagination-select__item {
-  width: 40px;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
+.catalog-items__select a,
 .pagination-select__item a {
   font-weight: 800;
   font-size: 16px;
@@ -1366,41 +1358,52 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.pagination-select__list {
+  display: flex;
+}
+
+.pagination-list__item {
+  width: 40px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
   opacity: 0.3;
 }
 
-.pagination__down,
-.pagination__up {
+.pagination-down,
+.pagination-up {
   width: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   box-sizing: border-box;
 }
 
-.pagination__down {
+.pagination-down {
   text-align: left;
   padding-left: 30px;
 }
 
-.pagination__up {
+.pagination-up {
   text-align: right;
   padding-right: 30px;
   justify-self: end;
 }
 
-.pagination__down a,
-.pagination__up a,
-.active a {
+.active {
   opacity: 1;
 }
 
-.pagination__down:hover,
-.pagination__up:hover,
-.pagination__down:focus,
-.pagination__up:focus {
+.pagination-down:hover,
+.pagination-up:hover,
+.pagination-down:focus,
+.pagination-up:focus {
   background: var(--special-grey-hover);
 }
 
-.pagination__down:active a,
-.pagination__up:active a {
+.pagination-down:active,
+.pagination-up:active {
   opacity: 0.3;
 }
 
@@ -1422,7 +1425,6 @@
   width: 200px;
   height: 2px;
   top: -30px;
-
   background: var(--basic-black);
 }
 
