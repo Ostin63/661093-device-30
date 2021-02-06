@@ -1557,9 +1557,18 @@
   grid-template-columns: 1fr repeat(12, var(--grid-col)) 1fr;
   grid-template-rows: auto;
   column-gap: var(--grid-gap);
+  background: #ffffff;
 }
 .main-filter {
   grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  background:  #DCDCDC;
+}
+
+.main-filter::after {
+  display: block;
+  width: 100%;
+  grid-column: -1 / 5;
   grid-row: 1 / 2;
   background:  #DCDCDC;
 }
@@ -1582,15 +1591,22 @@
   background: #fff;
 }
 
-.background-filters::before {
+.block-1 {
   display: block;
   grid-column: 1 /2;
   grid-row: 1 / 2;
   background:  #DCDCDC;
 }
 
-.background-filters::after {
+.block-2 {
   display: block;
   grid-column: -1 /-2;
   grid-row: -1 / -2;
+  background: #E5E5E5;
+}
+
+.block-3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+  background: #E5E5E5;
 }
