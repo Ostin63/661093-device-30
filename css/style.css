@@ -184,7 +184,8 @@
   z-index: 1;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background: var(--special-yellow-dark);
 }
 
@@ -1447,7 +1448,8 @@
   width: 100%;
 }
 
-.catalog-item__order:hover {
+.catalog-item__order:hover,
+.catalog-item__order:focus {
   opacity: 1;
 }
 
@@ -1541,4 +1543,3 @@
 .pagination-up:active {
   opacity: 0.3;
 }
-
