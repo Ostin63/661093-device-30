@@ -1082,7 +1082,7 @@
 
 .page-catalog__title {
   font-weight: 800;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-bottom: 30px;
   padding-left: 60px;
   font-size: 47px;
@@ -1092,7 +1092,7 @@
 
 .page-catalog__store {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding-left: 60px;
   display: flex;
 }
@@ -1148,14 +1148,14 @@
   text-transform: uppercase;
   font-family: "Gilroy", "Arial", sans-serif;
 }
-
+/*
 .filters__form {
   width: 200px;
   padding-top: 70px;
   padding-left: 60px;
   padding-right: 70px;
 }
-
+*/
 .filters-form legend {
   padding-top: 14px;
   font-weight: 800;
@@ -1336,10 +1336,10 @@
   display: flex;
   justify-content: space-between;
 }
-
+/*
 .sorting__contents {
   padding-left: 70px;
-}
+}*/
 
 .sorting__selection {
   width: 508px;
@@ -1403,12 +1403,12 @@
 }
 
 /*Catalog*/
-
+/*
 .catalog-product__items {
   padding-top: 70px;
   padding-left: 70px;
   grid-column: 2 / -1;
-}
+}*/
 
 .catalog-items__list {
   display: grid;
@@ -1552,51 +1552,57 @@
 :root {
   --grid-col: 60px;
   --grid-gap: 40px;
+  --grid-shift: 32px;
 }
 
 .background-filters {
   display: grid;
-  grid-template-columns: 1fr repeat(12, var(--grid-col)) 1fr;
+  grid-template-columns: 1fr repeat(10, var(--grid-col)) 1fr;
   grid-template-rows: auto;
   column-gap: var(--grid-gap);
+  min-width: 1200px;
   background: #E5E5E5;
 }
 .main-filter {
   grid-column: 2 / 5;
   grid-row: 1 / 2;
-  background:  #DCDCDC;
+  margin-left: calc(-1 * var(--grid-gap));
 }
 
 
 .filters__form {
   grid-column: 2 / 5;
   grid-row: 2 / -1;
-  background: #E5E5E5;
+  margin-top: 70px;
+  margin-left: calc(-1 * var(--grid-gap));
 }
 
 .catalog-product__sorting {
-  grid-column: 5 / -2;
+  max-width: 760px;
+  grid-column: 5 / -1;
   grid-row: 1 / 2;
 }
 
 .catalog-product__items {
-  grid-column: 5 / -2;
+  grid-column: 5 / -1;
   grid-row: 2 / -1 ;
-  background: #fff;
-}
-
-.background-filters::after {
-  display: block;
-  content: "";
-  grid-column: 1 /2;
-  grid-row: 1 / 2;
-  background:  #DCDCDC;
+  margin-top: 69px;
+  margin-right: auto;
+  background: #ffffff;
 }
 
 .background-filters::before {
-  display: block;
   content: "";
-  grid-column: 5 /-1;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  margin-right: var(--grid-shift);
+  background: #DCDCDC;
+}
+
+.background-filters::after {
+  content: "";
+  grid-column: 4 /-1;
   grid-row: 2 / -1;
+  margin-left: calc(var(--grid-col) - var(--grid-shift));
   background: #ffffff;
 }
