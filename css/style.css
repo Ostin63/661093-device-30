@@ -1553,6 +1553,7 @@
 }
 
 .background-filters {
+  display: grid;
   grid-template-columns: 1fr repeat(12, var(--grid-col)) 1fr;
   column-gap: var(--grid-gap);
 }
