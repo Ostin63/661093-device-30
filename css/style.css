@@ -61,8 +61,8 @@
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
   --special-yellow-line: #FFC600;
-  --linear-gradient-top-slider: linear-gradient(180deg, #F7E296 114px, #ffffff 114px);
-  --linear-gradient-services: linear-gradient(180deg, #ffffff 114px, #E5E5E5 114px);
+  --linear-gradient-top-slider: linear-gradient(180deg, var(--special-yellow) 114px, var(--basic-white) 114px);
+  --linear-gradient-services: linear-gradient(180deg, var(--basic-white) 114px, var(--basic-grey-light) 114px);
   --icon-lens: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.667 12a5.301 5.301 0 003.264-1.125l2.931 2.93.943-.942-2.931-2.931A5.3 5.3 0 0012 6.667a5.34 5.34 0 00-5.333-5.334 5.34 5.34 0 00-5.334 5.334A5.34 5.34 0 006.667 12zm0-9.333c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z' fill='%23000'/%3E%3C/svg%3E");
   --icon-user: url("data:image/svg+xml,%3Csvg width='13' height='14' viewBox='0 0 13 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z' fill='black'/%3E%3C/svg%3E%0A");
   --icon-chart: url("data:image/svg+xml,%3Csvg width='14' height='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.917 5.367h1.75v5.716h-1.75V5.367zm3.266-2.45h1.634v8.166H6.183V2.917zM9.45 7.583h1.633v3.5H9.45v-3.5z' fill='%23000'/%3E%3C/svg%3E");
@@ -1364,7 +1364,7 @@
 /*Sorting*/
 
 .catalog-product__sorting {
-  max-width: 760px;
+  max-width: 756px;
   grid-column: 5 / -1;
   grid-row: 1 / 2;
   display: flex;
@@ -1373,7 +1373,7 @@
 
 .sorting__selection {
   width: 508px;
-  margin-left: 55px;
+  margin-left: 64px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
