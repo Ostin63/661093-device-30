@@ -1,9 +1,9 @@
 /*top slider*/
 
-let sliderButtons = document.querySelectorAll('.pagination-slider__item');
-let sliderItems = document.querySelectorAll('.slider-list__item');
+const sliderButtons = document.querySelectorAll('.pagination-slider__item');
+const sliderItems = document.querySelectorAll('.slider-list__item');
 
-let slideSwitch = function (itemButton, sliderCart) {
+const slideSwitch = function (itemButton, sliderCart) {
   itemButton.addEventListener('click', function () {
 
     for (let i = 0; i < sliderButtons.length; i++) {
@@ -25,10 +25,10 @@ for (let i = 0; i < sliderButtons.length; i++) {
 
 /*Services*/
 
-let servicesButtons = document.querySelectorAll('.services-buttons__item');
-let servicesSliders = document.querySelectorAll('.services-slider__item');
+const servicesButtons = document.querySelectorAll('.services-buttons__item');
+const servicesSliders = document.querySelectorAll('.services-slider__item');
 
-let serviceSwitch = function (itemButton, sliderCart) {
+const serviceSwitch = function (itemButton, sliderCart) {
   itemButton.addEventListener('click', function () {
 
     for (let i = 0; i < servicesButtons.length; i++) {
@@ -50,9 +50,9 @@ for (let i = 0; i < servicesButtons.length; i++) {
 
 /* modal map*/
 
-let buttonMap = document.querySelector('.contacts__map');
-let modalMap = document.querySelector('.modal-map');
-let mapClose = modalMap.querySelector('.modal-map__close');
+const buttonMap = document.querySelector('.contacts__map');
+const modalMap = document.querySelector('.modal-map');
+const mapClose = modalMap.querySelector('.modal-map__close');
 
 let modalClose = function (evt) {
   evt.preventDefault();
@@ -60,7 +60,7 @@ let modalClose = function (evt) {
   window.removeEventListener('keypress', onEscapePress);
 }
 
-let onEscapePress = function (evt) {
+const onEscapePress = function (evt) {
   if (evt.keyCode === 27) {
     modalClose(evt);
   }
@@ -76,15 +76,15 @@ mapClose.addEventListener('click', modalClose);
 
 /*modal feedback*/
 
-let contactsButton = document.querySelector('.contacts__button');
-let modalFeedback = document.querySelector('.modal-feedback');
-let feedbackClose = modalFeedback.querySelector('.modal-feedback__close');
+const contactsButton = document.querySelector('.contacts__button');
+const modalFeedback = document.querySelector('.modal-feedback');
+const feedbackClose = modalFeedback.querySelector('.modal-feedback__close');
 
-let fullname = modalFeedback.querySelector('[name=fullname]');
-let email = modalFeedback.querySelector('[name=email]');
+const fullname = modalFeedback.querySelector('[name=fullname]');
+const email = modalFeedback.querySelector('[name=email]');
 
-var isStorageSupport = true;
-var storage = '';
+let isStorageSupport = true;
+let storage = '';
 
 try {
   storage = localStorage.getItem('fullname');
@@ -106,13 +106,13 @@ contactsButton.addEventListener('click', function (evt) {
 
 feedbackClose.addEventListener('click', modalClose);
 
-let feedbackForm = modalFeedback.querySelector('.modal-feedback__form');
-let fields = feedbackForm.querySelectorAll('.feedback-item__field');
+const feedbackForm = modalFeedback.querySelector('.modal-feedback__form');
+const fields = feedbackForm.querySelectorAll('.feedback-item__field');
 
 feedbackForm.addEventListener('submit', function (evt) {
   if (!fullname.value || !email.value) {
     evt.preventDefault();
-    for (var i = 0; i < fields.length; i++) {
+    for (let i = 0; i < fields.length; i++) {
       let field = fields[i];
       if (!field.value) {
         field.classList.add('field-error');
