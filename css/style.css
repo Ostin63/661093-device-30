@@ -41,12 +41,14 @@
 :root {
   --white-30: rgba(255, 255, 255, 0.3);
   --white-60: rgba(255, 255, 255, 0.6);
+  --black-00: rgba(0, 0, 0, 0);
   --black-15: rgba(0, 0, 0, 0.15);
   --black-18: rgba(0, 0, 0, 0.18);
   --black-20: rgba(0, 0, 0, 0.2);
   --black-30: rgba(0, 0, 0, 0.3);
   --black-40: rgba(0, 0, 0, 0.4);
   --black-60: rgba(0, 0, 0, 0.6);
+  --black-90: rgba(0, 0, 0, 0.9);
   --basic-black: #000000;
   --basic-dark: #363636;
   --basic-white: #ffffff;
@@ -58,10 +60,12 @@
   --special-grey-catalog: #EBEBEB;
   --special-dark-grey: #DCDCDC;
   --special-grey-hover: #D9D9D9;
+  --special-feedback-hover: #EAEAEA;
   --special-yellow: #F7E296;
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
   --special-yellow-line: #FFC600;
+  --input-error: #f6dada;
   --linear-gradient-top-slider: linear-gradient(180deg, var(--special-yellow) 114px, var(--basic-white) 114px);
   --linear-gradient-services: linear-gradient(180deg, var(--basic-white) 114px, var(--basic-grey-light) 114px);
   --icon-lens: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.667 12a5.301 5.301 0 003.264-1.125l2.931 2.93.943-.942-2.931-2.931A5.3 5.3 0 0012 6.667a5.34 5.34 0 00-5.333-5.334 5.34 5.34 0 00-5.334 5.334A5.34 5.34 0 006.667 12zm0-9.333c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z' fill='%23000'/%3E%3C/svg%3E");
@@ -204,6 +208,10 @@
   align-self: center;
   box-sizing: border-box;
   z-index: 10;
+}
+
+.block-none {
+  display: none;
 }
 
 /*Header*/
@@ -562,6 +570,38 @@
   width: 220px;
   margin-top: 50px;
   margin-bottom: 35px;
+}
+
+.pagination-slider {
+  position: absolute;
+  display: block;
+  width: 72px;
+  bottom: 168px;
+  right: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.pagination-slider__item {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: inherit;
+  border: 1px solid var(--basic-black);
+}
+
+.pagination-active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  border: 1px solid var(--basic-black);
 }
 
 /*popular*/
@@ -1013,7 +1053,48 @@
   justify-self: end;
 }
 
-/*Modal map*/
+/*Animation modal*/
+
+@keyframes bounce {
+  0% {
+    transform: scale3d(0.1, 0.1, 1);
+    box-shadow: 0 3px 20px var(--black-90);
+  }
+  55% {
+    transform: scale3d(1.08, 1.08, 1);
+    box-shadow: 0 10px 20px var(--black-00);
+  }
+  75% {
+    transform: scale3d(0.95, 0.95, 1);
+    box-shadow: 0 0 20px var(--black-90);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    box-shadow: 0 3px 20px var(--black-90);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+/*Close modal*/
 
 .close {
   position: absolute;
@@ -1037,6 +1118,8 @@
 .close:active {
   opacity: 0.3;
 }
+
+/*Modal map*/
 
 .modal-map {
   position: fixed;
@@ -1086,6 +1169,19 @@
   outline: none;
 }
 
+.feedback-item input:hover {
+  border: 2px solid var(--special-feedback-hover);
+  background: var(--special-feedback-hover);
+}
+
+.feedback-item input:focus {
+  border: 2px solid var(--special-yellow);
+}
+
+.feedback-item__field.field-error {
+  background: var(--input-error);
+}
+
 .feedback-item input::placeholder,
 .feedback-item textarea::placeholder {
   padding-left: 15px;
@@ -1098,10 +1194,6 @@
 
 .feedback-item textarea::placeholder {
   padding-top: 13px;
-}
-
-.feedback-item__field:focus {
-  border: 2px solid var(--special-yellow);
 }
 
 .modal-feedback__form {
@@ -1122,7 +1214,7 @@
 
 .feedback-form__message {
   grid-column: 1 / -1;
-  grid-row-start: 2 / 3;
+  grid-row: 2 / 3;
   display: grid;
   grid-template-rows: auto 167px;
   gap: 10px;
@@ -1131,12 +1223,21 @@
 .feedback-form__button {
   width: 200px;
   margin-top: 12px;
-  grid-row-start: 3 / -1;
+  grid-row: 3 / -1;
 }
 
 .modal-feedback__close {
   top: 20px;
   right: 20px;
+}
+
+.show-block {
+  display: block;
+  animation: bounce 0.5s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 /*Store catalog*/
