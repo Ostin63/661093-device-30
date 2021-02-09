@@ -1,6 +1,6 @@
 /*top slider*/
 
-const sliderButtons = document.querySelectorAll('.pagination-slider__item');
+const sliderButtons = document.querySelectorAll('.pagination-slider__item a');
 const sliderItems = document.querySelectorAll('.slider-list__item');
 
 const slideSwitch = function (itemButton, sliderCart) {
