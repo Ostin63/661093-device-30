@@ -54,7 +54,7 @@ const buttonMap = document.querySelector('.contacts__map');
 const modalMap = document.querySelector('.modal-map');
 const mapClose = modalMap.querySelector('.modal-map__close');
 
-let modalClose = function (evt) {
+const modalClose = function (evt) {
   evt.preventDefault();
   document.querySelector('.show-block').classList.remove('show-block');
   window.removeEventListener('keypress', onEscapePress);
