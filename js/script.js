@@ -83,49 +83,49 @@ let feedbackClose = modalFeedback.querySelector('.modal-feedback__close');
 let fullname = modalFeedback.querySelector('[name=fullname]');
 let email = modalFeedback.querySelector('[name=email]');
 
-  var isStorageSupport = true;
-  var storage = '';
+var isStorageSupport = true;
+var storage = '';
 
-  try {
-    storage = localStorage.getItem('fullname');
-  } catch (err) {
-    isStorageSupport = false;
+try {
+  storage = localStorage.getItem('fullname');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+contactsButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalFeedback.classList.add('show-block');
+  window.addEventListener('keydown', onEscapePress);
+  if (storage) {
+    fullname.value = storage;
+    email.focus();
+  } else {
+    fullname.focus();
   }
+});
 
-  contactsButton.addEventListener('click', function (evt) {
+feedbackClose.addEventListener('click', modalClose);
+
+let feedbackForm = modalFeedback.querySelector('.modal-feedback__form');
+let fields = feedbackForm.querySelectorAll('.feedback-item__field');
+
+feedbackForm.addEventListener('submit', function (evt) {
+  if (!fullname.value || !email.value) {
     evt.preventDefault();
-    modalFeedback.classList.add('show-block');
-    window.addEventListener('keydown', onEscapePress);
-    if (storage) {
-      fullname.value = storage;
-      email.focus();
-    } else {
-      fullname.focus();
-    }
-  });
-
-  feedbackClose.addEventListener('click', modalClose);
-
-  let feedbackForm = modalFeedback.querySelector('.modal-feedback__form');
-  let fields = feedbackForm.querySelectorAll('.feedback-item__field');
-
-  feedbackForm.addEventListener('submit', function (evt) {
-    if (!fullname.value || !email.value) {
-      evt.preventDefault();
-      for (var i = 0; i < fields.length; i++) {
-        let field = fields[i];
-        if (!field.value) {
-          field.classList.add('field-error');
-          modalFeedback.classList.remove('modal-error');
-          modalFeedback.offsetWidth = modalFeedback.offsetWidth;
-          modalFeedback.classList.add('modal-error');
-        } else {
-          field.classList.remove('field-error');
-        }
-      }
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem('fullname', fullname.value);
+    for (var i = 0; i < fields.length; i++) {
+      let field = fields[i];
+      if (!field.value) {
+        field.classList.add('field-error');
+        modalFeedback.classList.remove('modal-error');
+        modalFeedback.offsetWidth = modalFeedback.offsetWidth;
+        modalFeedback.classList.add('modal-error');
+      } else {
+        field.classList.remove('field-error');
       }
     }
-  });
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('fullname', fullname.value);
+    }
+  }
+});

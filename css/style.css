@@ -1060,14 +1060,17 @@
     transform: scale3d(0.1, 0.1, 1);
     box-shadow: 0 3px 20px var(--black-90);
   }
+
   55% {
     transform: scale3d(1.08, 1.08, 1);
     box-shadow: 0 10px 20px var(--black-00);
   }
+
   75% {
     transform: scale3d(0.95, 0.95, 1);
     box-shadow: 0 0 20px var(--black-90);
   }
+
   100% {
     transform: scale3d(1, 1, 1);
     box-shadow: 0 3px 20px var(--black-90);
@@ -1075,10 +1078,12 @@
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
@@ -1086,6 +1091,7 @@
   90% {
     transform: translateX(-10px);
   }
+
   20%,
   40%,
   60%,
@@ -1450,6 +1456,7 @@
 .filters-form__color {
   margin-top: 28px;
 }
+
 .option-style {
   position: relative;
   padding-left: 42px;
@@ -1500,9 +1507,11 @@
 .filters-form__bluetooth {
   margin-top: 13px;
 }
+
 .bluetooth__category {
   margin-top: -1px;
 }
+
 .bluetooth-category__option label::before,
 .bluetooth-category__option label::after {
   position: absolute;
@@ -1600,7 +1609,7 @@
 
 .catalog-product__items {
   grid-column: 5 / -1;
-  grid-row: 2 / -1 ;
+  grid-row: 2 / -1;
   margin-right: auto;
   background: var(--basic-white);
   z-index: 1;
