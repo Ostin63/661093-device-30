@@ -1,6 +1,6 @@
 /*top slider*/
 
-const sliderButtons = document.querySelectorAll('.pagination-slider__item a');
+const sliderButtons = document.querySelectorAll('.slider-item__pagination');
 const sliderItems = document.querySelectorAll('.slider-list__item');
 
 const slideSwitch = function (itemButton, sliderCart) {
@@ -8,15 +8,15 @@ const slideSwitch = function (itemButton, sliderCart) {
 
     for (let i = 0; i < sliderButtons.length; i++) {
       let item = sliderButtons[i];
-      item.classList.remove('pagination-active');
+      item.classList.remove('button-active');
     }
-    itemButton.classList.add('pagination-active');
+    itemButton.classList.add('button-active');
 
     for (let i = 0; i < sliderItems.length; i++) {
       let cart = sliderItems[i];
-      cart.classList.remove('show-slider');
+      cart.classList.remove('active');
     }
-    sliderCart.classList.add('show-slider');
+    sliderCart.classList.add('active');
   });
 };
 for (let i = 0; i < sliderButtons.length; i++) {
@@ -33,15 +33,15 @@ const serviceSwitch = function (itemButton, sliderCart) {
 
     for (let i = 0; i < servicesButtons.length; i++) {
       let item = servicesButtons[i];
-      item.classList.remove('service-button-active');
+      item.classList.remove('button-active');
     }
-    itemButton.classList.add('service-button-active');
+    itemButton.classList.add('button-active');
 
     for (let i = 0; i < servicesSliders.length; i++) {
       let cart = servicesSliders[i];
-      cart.classList.remove('active-service');
+      cart.classList.remove('active');
     }
-    sliderCart.classList.add('active-service');
+    sliderCart.classList.add('active');
   });
 };
 for (let i = 0; i < servicesButtons.length; i++) {
