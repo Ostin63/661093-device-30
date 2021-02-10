@@ -479,6 +479,7 @@
   border-radius: 50%;
   background: inherit;
   border: 1px solid var(--basic-black);
+  box-sizing: border-box;
 }
 
 .pagination-active::after {
@@ -491,6 +492,7 @@
   right: 2px;
   border-radius: 50%;
   border: 1px solid var(--basic-black);
+  box-sizing: border-box;
 }
 
 .top-section__slider {
