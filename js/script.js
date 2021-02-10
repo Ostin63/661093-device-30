@@ -7,15 +7,10 @@ const slideSwitch = function (itemButton, sliderCart) {
   itemButton.addEventListener('click', function () {
 
     for (let i = 0; i < sliderButtons.length; i++) {
-      let item = sliderButtons[i];
-      item.classList.remove('button-active');
+      sliderButtons[i].classList.remove('button-active');
+      sliderItems[i].classList.remove('active');
     }
     itemButton.classList.add('button-active');
-
-    for (let i = 0; i < sliderItems.length; i++) {
-      let cart = sliderItems[i];
-      cart.classList.remove('active');
-    }
     sliderCart.classList.add('active');
   });
 };
@@ -32,15 +27,10 @@ const serviceSwitch = function (itemButton, sliderCart) {
   itemButton.addEventListener('click', function () {
 
     for (let i = 0; i < servicesButtons.length; i++) {
-      let item = servicesButtons[i];
-      item.classList.remove('button-active');
+      servicesButtons[i].classList.remove('button-active');
+      servicesSliders[i].classList.remove('active');
     }
     itemButton.classList.add('button-active');
-
-    for (let i = 0; i < servicesSliders.length; i++) {
-      let cart = servicesSliders[i];
-      cart.classList.remove('active');
-    }
     sliderCart.classList.add('active');
   });
 };
