@@ -1,21 +1,24 @@
+/*Function sliders*/
+
+const pictureSwitch = function (itemButtons, sliderCarts, namber) {
+  itemButtons[namber].addEventListener('click', function () {
+
+    for (let i = 0; i < itemButtons.length; i++) {
+      itemButtons[i].classList.remove('button-active');
+      sliderCarts[i].classList.remove('active');
+    }
+    itemButtons[namber].classList.add('button-active');
+    sliderCarts[namber].classList.add('active');
+  });
+};
+
 /*top slider*/
 
 const sliderButtons = document.querySelectorAll('.slider-item__pagination');
 const sliderItems = document.querySelectorAll('.slider-list__item');
 
-const slideSwitch = function (itemButton, sliderCart) {
-  itemButton.addEventListener('click', function () {
-
-    for (let i = 0; i < sliderButtons.length; i++) {
-      sliderButtons[i].classList.remove('button-active');
-      sliderItems[i].classList.remove('active');
-    }
-    itemButton.classList.add('button-active');
-    sliderCart.classList.add('active');
-  });
-};
-for (let i = 0; i < sliderButtons.length; i++) {
-  slideSwitch(sliderButtons[i], sliderItems[i]);
+for (let namber = 0; namber < sliderButtons.length; namber++) {
+  pictureSwitch(sliderButtons, sliderItems, namber);
 };
 
 /*Services*/
@@ -23,19 +26,9 @@ for (let i = 0; i < sliderButtons.length; i++) {
 const servicesButtons = document.querySelectorAll('.services-buttons__item');
 const servicesSliders = document.querySelectorAll('.services-slider__item');
 
-const serviceSwitch = function (itemButton, sliderCart) {
-  itemButton.addEventListener('click', function () {
 
-    for (let i = 0; i < servicesButtons.length; i++) {
-      servicesButtons[i].classList.remove('button-active');
-      servicesSliders[i].classList.remove('active');
-    }
-    itemButton.classList.add('button-active');
-    sliderCart.classList.add('active');
-  });
-};
-for (let i = 0; i < servicesButtons.length; i++) {
-  serviceSwitch(servicesButtons[i], servicesSliders[i]);
+for (let namber = 0; namber < servicesButtons.length; namber++) {
+  pictureSwitch(servicesButtons, servicesSliders, namber);
 };
 
 /* modal map*/
