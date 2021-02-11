@@ -1,35 +1,33 @@
 /*Function sliders*/
 
-const pictureSwitch = function (itemButtons, sliderCarts, namber) {
-  itemButtons[namber].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    for (let i = 0; i < itemButtons.length; i++) {
-      itemButtons[i].classList.remove('button-active');
-      sliderCarts[i].classList.remove('active');
-    }
-    itemButtons[namber].classList.add('button-active');
-    sliderCarts[namber].classList.add('active');
-  });
-};
+const switchSlides = function (switchers, slides) {
+  for (let i = 0; i < switchers.length; i++) {
+    switchers[i].addEventListener('click', function () {
 
-/*top slider*/
+      for (let i = 0; i < switchers.length; i++) {
+        switchers[i].classList.remove('button-active');
+        slides[i].classList.remove('active');
+      }
+
+      switchers[i].classList.add('button-active');
+      slides[i].classList.add('active');
+    });
+  }
+}
+
+/*Top slider*/
 
 const sliderButtons = document.querySelectorAll('.slider-item__pagination');
 const sliderItems = document.querySelectorAll('.slider-list__item');
 
-for (let namber = 0; namber < sliderButtons.length; namber++) {
-  pictureSwitch(sliderButtons, sliderItems, namber);
-};
+switchSlides(sliderButtons, sliderItems);
 
 /*Services*/
 
 const servicesButtons = document.querySelectorAll('.services-buttons__item');
 const servicesSliders = document.querySelectorAll('.services-slider__item');
 
-
-for (let namber = 0; namber < servicesButtons.length; namber++) {
-  pictureSwitch(servicesButtons, servicesSliders, namber);
-};
+switchSlides(servicesButtons, servicesSliders);
 
 /* modal map*/
 
