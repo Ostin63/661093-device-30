@@ -1,8 +1,8 @@
 /*Function sliders*/
 
 const pictureSwitch = function (itemButtons, sliderCarts, namber) {
-  itemButtons[namber].addEventListener('click', function () {
-
+  itemButtons[namber].addEventListener('click', function (evt) {
+    evt.preventDefault();
     for (let i = 0; i < itemButtons.length; i++) {
       itemButtons[i].classList.remove('button-active');
       sliderCarts[i].classList.remove('active');
