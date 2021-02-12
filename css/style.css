@@ -1417,10 +1417,7 @@
 }
 
 .scale__bar {
-  position: relative;
-  width: 94px;
   height: 2px;
-  left: 20px;
   background: var(--special-green);
 }
 
@@ -1456,10 +1453,6 @@
   width: 74px;
   margin-left: -2px;
   outline: none;
-}
-
-.toggle-max {
-  left: 114px;
 }
 
 /*filters-color*/
