@@ -1048,6 +1048,7 @@
 .social-item__button svg {
   width: 32px;
   height: 32px;
+  fill: var(--basic-white);
   opacity: 0.3;
 }
 
