@@ -1045,6 +1045,25 @@
   display: block;
 }
 
+.social-item__button svg {
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social-item__button svg:hover,
+.social-item__button svg:focus {
+  opacity: 0.6;
+}
+
+.social-item__button svg:active {
+  opacity: 0.1;
+}
+
+.footer-bottom__logo-html {
+  justify-self: end;
+}
+
 /*Animation modal*/
 
 @keyframes bounce {
