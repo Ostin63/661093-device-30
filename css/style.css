@@ -168,6 +168,10 @@
   opacity: 0.6;
 }
 
+.link:focus {
+  opacity: 0.6;
+}
+
 .link:active {
   opacity: 0.3;
 }
@@ -208,6 +212,10 @@
 }
 
 .button:hover {
+  background: var(--special-yellow-dark);
+}
+
+.button:focus {
   background: var(--special-yellow-dark);
 }
 
@@ -747,6 +755,10 @@
   background: none;
 }
 
+.services-buttons__item.button-active .services-item__button:focus {
+  background: none;
+}
+
 .services__plank {
   margin-top: 15px;
   grid-column: 2 / 3;
@@ -1133,6 +1145,10 @@
 }
 
 .close:hover {
+  opacity: 1;
+}
+
+.close:focus {
   opacity: 1;
 }
 
