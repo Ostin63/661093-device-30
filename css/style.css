@@ -1070,22 +1070,18 @@
 @keyframes bounce {
   0% {
     transform: scale3d(0.1, 0.1, 1);
-    box-shadow: 0 3px 20px var(--black-90);
   }
 
   55% {
     transform: scale3d(1.08, 1.08, 1);
-    box-shadow: 0 10px 20px var(--black-00);
   }
 
   75% {
     transform: scale3d(0.95, 0.95, 1);
-    box-shadow: 0 0 20px var(--black-90);
   }
 
   100% {
     transform: scale3d(1, 1, 1);
-    box-shadow: 0 3px 20px var(--black-90);
   }
 }
 
@@ -1185,6 +1181,10 @@
   background: var(--basic-light);
   border: 2px solid var(--basic-light);
   outline: none;
+}
+
+.feedback-item textarea {
+  resize: none;
 }
 
 .feedback-item input:hover {
