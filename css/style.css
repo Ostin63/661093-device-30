@@ -285,7 +285,7 @@
   width: 100%;
   padding: 13px 40px;
   border: none;
-  border-bottom: 1px solid var(--special-yellow);
+  border-bottom: 2px solid var(--special-yellow);
   background: var(--special-yellow);
   cursor: pointer;
   box-sizing: border-box;
@@ -320,12 +320,12 @@
   font-weight: 300;
   text-transform: uppercase;
   font-family: "Open Sans", "Arial", sans-serif;
-  border-bottom: 1px solid var(--basic-black);
+  border-bottom: 2px solid var(--basic-black);
   display: none;
 }
 
 .search__text:focus {
-  border-bottom: 1px solid var(--basic-black);
+  border-bottom: 2px solid var(--basic-black);
 }
 
 .search__button:hover {
@@ -340,6 +340,7 @@
 
 .search__text:focus+.search__button {
   display: block;
+  border: 2px solid var(--basic-black);
 }
 
 .button-link {
