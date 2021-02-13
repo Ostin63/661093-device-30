@@ -141,6 +141,24 @@
   color: inherit;
 }
 
+::-moz-focus-inner {
+  border: none;
+}
+
+:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 .picture {
   max-width: 100%;
   height: auto;
