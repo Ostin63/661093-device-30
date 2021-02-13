@@ -164,8 +164,7 @@
   height: auto;
 }
 
-.link:hover,
-.link:focus {
+.link:hover {
   opacity: 0.6;
 }
 
@@ -194,7 +193,6 @@
   font-family: "Gilroy", "Arial", sans-serif;
   border: none;
   background: none;
-  outline: none;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -209,8 +207,7 @@
   z-index: 1;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   background: var(--special-yellow-dark);
 }
 
@@ -282,13 +279,12 @@
   border: none;
   border-bottom: 1px solid var(--special-yellow);
   background: var(--special-yellow);
-  outline: none;
   cursor: pointer;
   box-sizing: border-box;
+  outline: none;
 }
 
-.search__text:hover,
-.search__text:focus {
+.search__text:hover {
   border-bottom: 1px solid var(--basic-black);
 }
 
@@ -320,8 +316,7 @@
   display: none;
 }
 
-.search__button:hover,
-.search__button:focus {
+.search__button:hover {
   display: block;
   background: var(--basic-black);
   color: var(--basic-white);
@@ -331,9 +326,10 @@
   color: var(--white-30);
 }
 
-.search__text:focus+.search__button,
 .search__text:hover+.search__button {
   display: block;
+  border-left: 1px solid var(--basic-black);
+  border-top: 1px solid var(--basic-black);
 }
 
 .button-link {
@@ -457,13 +453,11 @@
   grid-area: f;
 }
 
-.nav-item__button-catalog:hover+.nav-item__catalog-nav,
-.nav-item__button-catalog:focus+.nav-item__catalog-nav {
+.nav-item__button-catalog:hover+.nav-item__catalog-nav {
   display: grid;
 }
 
-.nav-item__catalog-nav:hover,
-.nav-item__catalog-nav:focus {
+.nav-item__catalog-nav:hover {
   display: grid;
 }
 
@@ -497,7 +491,6 @@
   border-radius: 50%;
   background: inherit;
   border: 1px solid var(--basic-black);
-  outline: none;
   box-sizing: border-box;
 }
 
@@ -703,8 +696,7 @@
   background: var(--popular-quadrocoptters) 0 0 no-repeat;
 }
 
-.popular-item__link:hover::before,
-.popular-item__link:focus::before {
+.popular-item__link:hover::before {
   background-color: var(--special-yellow-dark);
 }
 
@@ -749,8 +741,7 @@
   color: var(--special-yellow);
 }
 
-.services-buttons__item.button-active .services-item__button:hover,
-.services-buttons__item.button-active .services-item__button:focus {
+.services-buttons__item.button-active .services-item__button:hover {
   background: none;
 }
 
@@ -850,8 +841,7 @@
   height: 100px;
 }
 
-.brands-item__imges:hover,
-.brands-item__imges:focus {
+.brands-item__imges:hover {
   filter: grayscale(0);
   opacity: 1;
 }
@@ -1070,8 +1060,7 @@
   opacity: 0.3;
 }
 
-.social-item__button svg:hover,
-.social-item__button svg:focus {
+.social-item__button svg:hover {
   opacity: 0.6;
 }
 
@@ -1139,11 +1128,9 @@
   background-image: var(--button-close);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  outline: none;
 }
 
-.close:hover,
-.close:focus {
+.close:hover {
   opacity: 1;
 }
 
@@ -1194,11 +1181,14 @@
   margin: 0;
 }
 
+.feedback-item input {
+  outline: none;
+}
+
 .feedback-item input,
 .feedback-item textarea {
   background: var(--basic-light);
   border: 2px solid var(--basic-light);
-  outline: none;
 }
 
 .feedback-item textarea {
@@ -1303,8 +1293,7 @@
   color: var(--black-30);
 }
 
-.store-catalog__item a:hover,
-.store-catalog__item a:focus {
+.store-catalog__item a:hover {
   opacity: 0.6;
 }
 
@@ -1471,7 +1460,6 @@
 .range-price input {
   width: 74px;
   margin-left: -2px;
-  outline: none;
 }
 
 /*filters-color*/
@@ -1514,9 +1502,7 @@
 }
 
 .option-style label:hover::before,
-.option-style label:hover::after,
-.option-style label:focus::before,
-.option-style label:focus::after {
+.option-style label:hover::after {
   opacity: 0.6;
 }
 
@@ -1602,8 +1588,7 @@
   opacity: 0.2;
 }
 
-.sorting-direction__item:hover,
-.sorting-direction__item:focus {
+.sorting-direction__item:hover {
   opacity: 0.4;
 }
 
@@ -1618,8 +1603,7 @@
   opacity: 0.3;
 }
 
-.selection__item:hover,
-.selection__item:focus {
+.selection__item:hover {
   opacity: 0.6;
 }
 
@@ -1678,8 +1662,7 @@
   width: 100%;
 }
 
-.catalog-item__order:hover,
-.catalog-item__order:focus {
+.catalog-item__order:hover {
   opacity: 1;
 }
 
@@ -1766,9 +1749,7 @@
 }
 
 .pagination-down:hover,
-.pagination-up:hover,
-.pagination-down:focus,
-.pagination-up:focus {
+.pagination-up:hover {
   background: var(--special-grey-hover);
 }
 
