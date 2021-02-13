@@ -284,8 +284,8 @@
   outline: none;
 }
 
-.search__text:hover {
-  border-bottom: 1px solid var(--basic-black);
+.search__text::placeholder {
+  color: var(--black-30);
 }
 
 .search__text:active .search__text::placeholder {
@@ -316,6 +316,10 @@
   display: none;
 }
 
+.search__text:focus {
+  border-bottom: 1px solid var(--basic-black);
+}
+
 .search__button:hover {
   display: block;
   background: var(--basic-black);
@@ -326,10 +330,8 @@
   color: var(--white-30);
 }
 
-.search__text:hover+.search__button {
+.search__text:focus+.search__button {
   display: block;
-  border-left: 1px solid var(--basic-black);
-  border-top: 1px solid var(--basic-black);
 }
 
 .button-link {
