@@ -320,7 +320,7 @@
   font-weight: 300;
   text-transform: uppercase;
   font-family: "Open Sans", "Arial", sans-serif;
-  border-bottom: 2px solid var(--basic-black);
+  border: 2px solid var(--basic-black);
   display: block;
 }
 
@@ -336,7 +336,11 @@
 
 .search__text:invalid+.search__button {
   display: none;
-  border: 2px solid var(--basic-black);
+  border: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow: 0 0 1.5px 1px var(--special-yellow);
 }
 
 .button-link {
