@@ -289,7 +289,7 @@
   width: 100%;
   padding: 13px 40px;
   border: none;
-  border-bottom: 2px solid var(--basic-black);
+  border-bottom: 2px solid var(--special-yellow);
   background: var(--special-yellow);
   cursor: pointer;
   box-sizing: border-box;
@@ -310,6 +310,10 @@
 
 .search__text:hover::placeholder {
   color: var(--black-60);
+}
+
+.search__text:focus {
+  border-bottom: 2px solid var(--basic-black);
 }
 
 .search__button {
