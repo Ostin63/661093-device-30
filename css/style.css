@@ -1519,6 +1519,10 @@
   background: var(--checkbox-on) 0 0 no-repeat;
 }
 
+.option-style input:focus+label::before {
+  outline: 2px solid currentColor;
+}
+
 .color-list__option input:checked+label::before {
   top: -4px;
   background: var(--checkbox-stick) 0 0 no-repeat;
