@@ -1521,6 +1521,7 @@
 
 .option-style input:focus+label::before {
   outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 .color-list__option input:checked+label::before {
