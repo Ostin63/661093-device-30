@@ -1598,16 +1598,16 @@
 
 .sorting-item__down {
   display: block;
-  width: 10px;
-  height: 11px;
+  width: 11px;
+  height: 10px;
   background: var(--sorting-arrow) 0 0 no-repeat;
   transform: rotate(-180deg);
 }
 
 .sorting-item__up {
   display: block;
-  width: 10px;
-  height: 11px;
+  width: 11px;
+  height: 10px;
   background: var(--sorting-arrow) 0 0 no-repeat;
 }
 
@@ -1690,7 +1690,8 @@
   width: 100%;
 }
 
-.catalog-item__order:hover {
+.catalog-item__order:hover,
+.catalog-item__order:focus-within {
   opacity: 1;
 }
 
