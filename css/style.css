@@ -1680,6 +1680,7 @@ cursor: grab;
   height: 380px;
   margin-bottom: 25px;
   background: var(--basic-grey-light);
+  object-fit: contain;
 }
 
 .catalog-item__order {
