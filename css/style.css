@@ -604,7 +604,17 @@
   display: grid;
 }
 
+.nav-item__button-catalog:focus-within+.nav-item__catalog-nav {
+  display: -ms-grid;
+  display: grid;
+}
+
 .nav-item__catalog-nav:hover {
+  display: -ms-grid;
+  display: grid;
+}
+
+.nav-item__catalog-nav:focus-within {
   display: -ms-grid;
   display: grid;
 }
