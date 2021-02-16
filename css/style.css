@@ -469,16 +469,14 @@
   grid-area: f;
 }
 
-.nav-item__button-catalog:hover+.nav-item__catalog-nav {
+.nav-item:hover .nav-item__catalog-nav,
+.nav-item:focus-within .nav-item__catalog-nav {
   display: grid;
 }
 
-.nav-item__button-catalog:focus-within+.nav-item__catalog-nav {
-  display: grid;
-}
-
-.nav-item__catalog-nav:hover {
-  display: grid;
+.nav-item__button-catalog {
+  position: relative;
+  z-index: 11;
 }
 
 /*Top slider*/
