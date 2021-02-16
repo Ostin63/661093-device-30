@@ -1847,6 +1847,7 @@
 
 .filters-form__button {
   margin-top: 18px;
+  margin-bottom: 50px;
 }
 
 /*Range*/
@@ -2197,10 +2198,10 @@
   margin-bottom: 79px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr -webkit-min-content 1fr;
-  -ms-grid-columns: 1fr min-content 1fr;
-  grid-template-columns: 1fr -webkit-min-content 1fr;
-  grid-template-columns: 1fr min-content 1fr;
+  -ms-grid-columns: 1fr -webkit-max-content 1fr;
+  -ms-grid-columns: 1fr max-content 1fr;
+  grid-template-columns: 1fr -webkit-max-content 1fr;
+  grid-template-columns: 1fr max-content 1fr;
   background: var(--special-grey-catalog);
 
 }
@@ -2216,9 +2217,16 @@
 }
 
 .pagination-select__list {
+  max-width: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .pagination-list__item {
