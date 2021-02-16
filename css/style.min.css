@@ -151,7 +151,7 @@
   outline-offset: 2px;
 }
 
-*page *:focus:not(:focus-visible) {
+.page *:focus:not(:focus-visible) {
   outline: none;
 }
 
