@@ -1459,7 +1459,6 @@
   margin: 0;
 }
 
-
 .feedback-item input,
 .feedback-item textarea {
   padding-left: 15px;
@@ -1469,6 +1468,7 @@
 }
 
 .feedback-item textarea {
+  padding-top: 13px;
   resize: none;
 }
 
@@ -1530,6 +1530,26 @@
   line-height: 42px;
   font-weight: 300;
   font-family: "Open Sans", Arial, sans-serif;
+}
+
+.feedback-item textarea::-webkit-input-placeholder {
+  line-height: 16px;
+}
+
+.feedback-item textarea::-moz-placeholder {
+  line-height: 16px;
+}
+
+.feedback-item textarea:-ms-input-placeholder {
+  line-height: 16px;
+}
+
+.feedback-item textarea::-ms-input-placeholder {
+  line-height: 16px;
+}
+
+.feedback-item textarea::placeholder {
+  line-height: 16px;
 }
 
 .modal-feedback__form {
