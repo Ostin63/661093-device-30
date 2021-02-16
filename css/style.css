@@ -91,6 +91,8 @@
   --checkbox-on: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='1' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
   --slider-button-empty: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='5.5' stroke='%23000'/%3E%3C/svg%3E");
   --slider-button: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='2.5' stroke='%23000'/%3E%3Ccircle cx='6' cy='6' r='5.5' stroke='%23000'/%3E%3C/svg%3E%0A");
+  --radio-on: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' stroke='%23000' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='4' fill='%23000'/%3E%3C/svg%3E");
+  --radio-off: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
   --grid-col: 60px;
   --grid-gap: 40px;
   --grid-shift: 32px;
@@ -1532,18 +1534,19 @@
 }
 
 .color-list__option input:checked+label::before {
-  top: -4px;
   background: var(--checkbox-stick) 0 0 no-repeat;
 }
 
-.option-style label:hover::before,
-.option-style label:hover::after {
+.option-style label:hover::before {
   opacity: 0.6;
 }
 
-.option-style label:active::before,
-.option-style label:active::after {
+.option-style label:active::before {
   opacity: 1;
+}
+
+.option-style input:disabled+label::before {
+  opacity: 0.25;
 }
 
 /*bluetooth*/
@@ -1556,25 +1559,18 @@
   margin-top: -1px;
 }
 
-.bluetooth-category__option label::before,
-.bluetooth-category__option label::after {
+.bluetooth-category__option label::before {
   position: absolute;
   content: "";
-  border-radius: 50%;
-}
-
-.bluetooth-category__option label::before {
+  width: 24px;
+  height: 24px;
   top: -3px;
-  border: 2px solid var(--basic-black);
+  background: var(--radio-off) 0 0 no-repeat;
   box-sizing: border-box;
 }
 
-.bluetooth-category__option input:checked+label::after {
-  width: 8px;
-  height: 8px;
-  top: 5px;
-  left: -34px;
-  background: var(--basic-black);
+.bluetooth-category__option input:checked+label::before {
+  background: var(--radio-on) 0 0 no-repeat;
 }
 
 /*Sorting*/
@@ -1760,6 +1756,14 @@
   padding-top: 25px;
   padding-bottom: 25px;
   opacity: 0.3;
+}
+
+.pagination-list__item:hover {
+  opacity: 0.6;
+}
+
+.pagination-list__item:active {
+  opacity: 1;
 }
 
 .pagination-down,
