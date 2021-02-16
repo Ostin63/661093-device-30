@@ -2178,6 +2178,15 @@
   letter-spacing: 0.1em;
   border: none;
   background: transparent;
+  opacity: 0.5;
+}
+
+.order__compare:hover {
+  opacity: 1;
+}
+
+.order__compare:active {
+  opacity: 0.2;
 }
 
 /*Pagination catalogs*/
