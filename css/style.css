@@ -777,14 +777,16 @@
 }
 
 .services-slider__item {
+  position: absolute;
   width: 760px;
   margin-top: 39px;
-  display: none;
+  display: flex;
   justify-content: space-between;
+  visibility: hidden;
 }
 
 .services-slider__item.active {
-  display: flex;
+  visibility: visible;
 }
 
 .service span {
