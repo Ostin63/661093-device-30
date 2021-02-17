@@ -341,7 +341,7 @@
   color: var(--white-30);
 }
 
-.search__text:invalid+.search__button {
+.search__text:invalid + .search__button {
   display: none;
   border: none;
 }
@@ -1517,7 +1517,7 @@
 }
 
 .option-style label::before,
-.color-list__option input:checked+label::before {
+.color-list__option input:checked + label::before {
   position: absolute;
   content: "";
   width: 24px;
@@ -1530,12 +1530,12 @@
   background: var(--checkbox-on) 0 0 no-repeat;
 }
 
-.option-style input:focus+label::before {
+.option-style input:focus-visible + label::before {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
 
-.color-list__option input:checked+label::before {
+.color-list__option input:checked + label::before {
   background: var(--checkbox-stick) 0 0 no-repeat;
 }
 
@@ -1547,7 +1547,7 @@
   opacity: 1;
 }
 
-.option-style input:disabled+label::before {
+.option-style input:disabled + label::before {
   opacity: 0.25;
 }
 
@@ -1571,7 +1571,7 @@
   box-sizing: border-box;
 }
 
-.bluetooth-category__option input:checked+label::before {
+.bluetooth-category__option input:checked + label::before {
   background: var(--radio-on) 0 0 no-repeat;
 }
 
