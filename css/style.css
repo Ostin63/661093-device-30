@@ -1299,10 +1299,12 @@
 }
 
 .page-catalog__store {
+  height: auto;
   margin: 0 auto;
   margin-bottom: 50px;
   padding-left: 60px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .store-catalog__item {
@@ -1494,6 +1496,11 @@
 .range-price input {
   width: 74px;
   margin-left: -2px;
+}
+
+.range-price input:focus{
+  outline: 2px solid currentColor;
+  offset: 2px;
 }
 
 /*filters-color*/
