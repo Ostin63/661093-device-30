@@ -253,25 +253,25 @@
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
             <img class="picture" src="img/brand_1.png" width="260" height="100"
-              alt="Логотип популярного первого бренда">
+              alt="Логотип бренда dji">
           </a>
         </li>
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
             <img class="picture" src="img/brand_2.png" width="260" height="100"
-              alt="Логотип популярного второго бренда">
+              alt="Логотип бренда sp.gadgets">
           </a>
         </li>
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
             <img class="picture" src="img/brand_3.png" width="260" height="100"
-              alt="Логотип популярного третьего бренда">
+              alt="Логотип бренда GoPro">
           </a>
         </li>
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
             <img class="picture" src="img/brand_4.png" width="260" height="100"
-              alt="Логотип популярного четвертого бренда">
+              alt="Логотип бренда vive">
           </a>
         </li>
       </ul>
@@ -294,7 +294,7 @@
             <strong>ЖелДорЭкспедиция</strong>
           </li>
         </ul>
-        <a class="promo__button button style" href="#">
+        <a class="promo__button button style" href="#" aria-level="переход раздел подроностей">
           <span class="button__text">Подробнее о нас</span>
         </a>
       </section>
@@ -307,7 +307,7 @@
           <img class="picture" src="img/map.png" width="560" height="222"
             alt="Карта офиса по адресу улица Строителей, 15">
         </a>
-        <button class="contacts__button button">
+        <button class="contacts__button button" aria-level="переход в форму обратной связи">
           <span class="button__text">Напишите нам</span>
         </button>
       </section>
@@ -380,18 +380,18 @@
     </div>
   </footer>
   <div class="modal-map">
-    <button class="modal-map__close close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
     <iframe
       src="https://yandex.ru/map-widget/v1/?um=constructor%3A642ef8d19241a22f313b8511cc9b561c3dece2db63066985b97fe6817e204fe1&amp;source=constructor"
       width="994" height="593" frameborder="0"></iframe>
+    <button class="modal-map__close close" type="button" aria-level="закрыть интрактикную карту">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </div>
   <section class="modal-feedback" id="modal-feedback">
     <div class="modal-feedback__name">
       <h2 class="visually-hidden">Напишите нам</h2>
     </div>
-    <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post" target="blank">
       <p class="feedback-form__name feedback-item">
         <label for="fullname">Ваше имя:</label>
         <input class="feedback-item__field" type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
@@ -404,10 +404,10 @@
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" rows="5" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="feedback-form__button button" type="submit">
+      <button class="feedback-form__button button" type="submit" aria-level="отправка введенных данных">
         <span class="button__text">Отправить</span>
       </button>
-      <button class="modal-feedback__close close" type="button">
+      <button class="modal-feedback__close close" type="button" aria-level="закрыть форму обратной связи">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </form>
