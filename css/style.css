@@ -41,6 +41,7 @@
 :root {
   --white-30: rgba(255, 255, 255, 0.3);
   --white-60: rgba(255, 255, 255, 0.6);
+  --white-70: rgba(255, 255, 255, 0.7);
   --black-00: rgba(0, 0, 0, 0);
   --black-15: rgba(0, 0, 0, 0.15);
   --black-18: rgba(0, 0, 0, 0.18);
@@ -352,6 +353,15 @@
 
 .button-link {
   display: flex;
+  font-weight: 300;
+}
+
+.button-link .enter-name {
+  margin-right: 20px;
+}
+
+.button-link .escape {
+  color: var(--black-30);
 }
 
 .button-link__icon {
@@ -962,7 +972,7 @@
 
 .footer__top {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
 }
 
 .footer-top__logo {
@@ -976,15 +986,33 @@
   height: 35px;
 }
 
-.footer-rigth__button {
-  margin-left: 38px;
-}
-
 .footer-top__rigth {
+  width: 100%;
   height: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-self: end;
+  color: var(--white-70);
+}
+
+.footer-rigth__button {
+  margin-left: 38px;
+  display: flex;
+  font-weight: 300;
+}
+
+.footer-rigth__button .escape {
+  color: var(--white-70);
+}
+
+.footer-rigth__button:hover,
+.footer-rigth__button:hover .escape {
+  color: var(--basic-white);
+}
+
+.footer-rigth__button:active,
+.footer-rigth__button .escape:active {
+  color: var(--white-30);
 }
 
 .button-link__icon-footer {
@@ -1044,6 +1072,7 @@
 }
 
 .footer-middle__phone {
+  font-weight: 300;
   justify-self: end;
 }
 
