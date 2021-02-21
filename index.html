@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -28,11 +28,13 @@
         <input class="search__text" type="text" placeholder="Поиск по сайту" id="search" required>
         <button class="search__button" type="submit">Найти</button>
       </form>
-      <a class="top-menu__button top-menu__button--icon_user button-link style link" href="#">
-        <span class="enter-name"></span>
-        <span class="enter">Войти</span>
-        <span class="escape block-none">Выход</span>
-      </a>
+      <div class="top-menu__button top-menu__button--icon_user top-enter-link">
+        <a class="top-enter-link__name enter-name style link" href="#"></a>
+        <a class="button-link style link" href="#">
+          <span class="top-enter-link__enter enter">Войти</span>
+          <span class="top-enter-link__escape escape block-none">Выход</span>
+        </a>
+      </div>
       <a class="top-menu__button top-menu__button--icon_chart button-link style link" href="#">
         <span>Сравнить</span>
       </a>
@@ -69,13 +71,16 @@
       <h2 class="visually-hidden">Top slider</h2>
       <ol class="pagination-slider list">
         <li class="pagination-slider__item slider-item">
-          <button class="slider-item__pagination button-active" type="button"><span class="visually-hidden">Первый слайд</span></button>
+          <button class="slider-item__pagination button-active" type="button"><span class="visually-hidden">Первый
+              слайд</span></button>
         </li>
         <li class="pagination-slider__item slider-item">
-          <button class="slider-item__pagination" type="button"><span class="visually-hidden">Второй слайд</span></button>
+          <button class="slider-item__pagination" type="button"><span class="visually-hidden">Второй
+              слайд</span></button>
         </li>
         <li class="pagination-slider__item slider-item">
-          <button class="slider-item__pagination" type="button"><span class="visually-hidden">Третий слайд</span></button>
+          <button class="slider-item__pagination" type="button"><span class="visually-hidden">Третий
+              слайд</span></button>
         </li>
       </ol>
       <ul class="top-section__slider slider-list list">
@@ -221,7 +226,8 @@
             <div class="service__info">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо
-                <br>заработаем, поднимая его на ваш этаж.</p>
+                <br>заработаем, поднимая его на ваш этаж.
+              </p>
             </div>
             <span class="service__img-delivery"></span>
           </li>
@@ -229,7 +235,8 @@
             <div class="service__info">
               <h3>Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                <br>Товар, не дом, конечно же.</p>
+                <br>Товар, не дом, конечно же.
+              </p>
             </div>
             <span class="service__img-warranty"></span>
           </li>
@@ -237,7 +244,8 @@
             <div class="service__info">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                <br>условия кредита. Выгодные для нашего банка, разумеется.</p>
+                <br>условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
             </div>
             <span class="service__img-credit"></span>
           </li>
@@ -249,26 +257,22 @@
       <ul class="popular-brands__list brands list">
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
-            <img class="picture" src="img/brand_1.png" width="260" height="100"
-              alt="Логотип бренда dji">
+            <img class="picture" src="img/brand_1.png" width="260" height="100" alt="Логотип бренда dji">
           </a>
         </li>
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
-            <img class="picture" src="img/brand_2.png" width="260" height="100"
-              alt="Логотип бренда sp.gadgets">
+            <img class="picture" src="img/brand_2.png" width="260" height="100" alt="Логотип бренда sp.gadgets">
           </a>
         </li>
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
-            <img class="picture" src="img/brand_3.png" width="260" height="100"
-              alt="Логотип бренда GoPro">
+            <img class="picture" src="img/brand_3.png" width="260" height="100" alt="Логотип бренда GoPro">
           </a>
         </li>
         <li class="brands__item brands-item">
           <a class="brands-item__imges" href="#">
-            <img class="picture" src="img/brand_4.png" width="260" height="100"
-              alt="Логотип бренда vive">
+            <img class="picture" src="img/brand_4.png" width="260" height="100" alt="Логотип бренда vive">
           </a>
         </li>
       </ul>
@@ -319,17 +323,17 @@
           </svg>
         </a>
         <div class="footer-top__rigth footer-rigth">
-          <a class="footer-rigth__button footer-rigth__button--icon_user button-link style" href="#">
-            <span class="enter-name"></span>
-            <span class="enter">Войти</span>
-            <span class="escape block-none">Выход</span>
-          </a>
-          <a class="footer-rigth__button footer-rigth__button--icon_chart button-link style" href="#">
-            <span class="button-link__icon-footer icon-chart-footer"></span>
+          <div class="footer-rigth__button footer-rigth__button--icon_user footer-rigth-button button-link">
+            <a class="footer-rigth-button__enter-name enter-name style footer-link" href="#"></a>
+            <a class="footer-rigth-button__enter button-link style" href="#">
+              <span class="enter footer-link">Войти</span>
+              <span class="escape footer-link block-none">Выход</span>
+            </a>
+          </div>
+          <a class="footer-rigth__button footer-rigth__button--icon_chart button-link style footer-link" href="#">
             <span>Сравнить</span>
           </a>
-          <a class="footer-rigth__button footer-rigth__button--icon_basket button-link style" href="#">
-            <span class="button-link__icon-footer icon-basket-footer"></span>
+          <a class="footer-rigth__button footer-rigth__button--icon_basket button-link style footer-link" href="#">
             <span>Корзина</span>
           </a>
         </div>
@@ -351,21 +355,21 @@
           <li class="social__item social-item">
             <a class="social-item__button style" href="#" aria-label="Мы в Фейсбуке">
               <svg role="img">
-                 <use xlink:href="img/sprite.svg#icon_facebook"></use>
+                <use xlink:href="img/sprite.svg#icon_facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-item">
             <a class="social-item__button style" href="#" aria-label="Мы в Инстаграме">
               <svg role="img">
-                 <use xlink:href="img/sprite.svg#icon_instagram"></use>
+                <use xlink:href="img/sprite.svg#icon_instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-item">
             <a class="social-item__button style" href="#" aria-label="Мы в Твиттере">
               <svg role="img">
-                 <use xlink:href="img/sprite.svg#icon_witter"></use>
+                <use xlink:href="img/sprite.svg#icon_witter"></use>
               </svg>
             </a>
           </li>
