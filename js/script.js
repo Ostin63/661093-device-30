@@ -47,9 +47,16 @@ const onEscapePress = function (evt) {
   }
 };
 
+let lastFocus;
+const addLastFocus = function (evt) {
+  if (evt.keyCode === 32 || evt.keyCode === 13) {
+    lastFocus.focus();
+  }
+}
 buttonMap.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalMap.classList.add('show-block');
+  window.addEventListener('keyup', addLastFocus);
   window.addEventListener('keydown', onEscapePress);
 });
 
@@ -75,7 +82,9 @@ try {
 
 contactsButton.addEventListener('click', function (evt) {
   evt.preventDefault();
+  lastFocus = document.activeElement;
   modalFeedback.classList.add('show-block');
+  window.addEventListener('keyup', addLastFocus);
   window.addEventListener('keydown', onEscapePress);
   if (storage) {
     fullname.value = storage;
