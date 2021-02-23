@@ -894,6 +894,12 @@
   opacity: 1;
 }
 
+.brands-item__imges:focus-visible {
+  filter: grayscale(0);
+  opacity: 1;
+  color: var(--basic-black);
+}
+
 /*Promo contacts*/
 
 .promo-contacts {
