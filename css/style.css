@@ -1799,10 +1799,6 @@
   margin: 0 auto;
 }
 
-.order__compare {
-  width: 100%;
-}
-
 .catalog-item__order:hover,
 .catalog-item__order:focus-within {
   opacity: 1;
@@ -1829,6 +1825,8 @@
 }
 
 .order__compare {
+  display: block;
+  margin-top: 12px;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
