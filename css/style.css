@@ -1074,6 +1074,10 @@ footer-rigth__button--icon_basket:focus,
   opacity: 1;
 }
 
+.footer-link:active {
+  color: var(--white-30);
+}
+
 .button-link__icon-footer {
   align-self: center;
 }
