@@ -1789,7 +1789,6 @@ footer-rigth__button--icon_basket:focus,
 }
 
 .item-info__new--active {
-  display: block;
   position: absolute;
   width: 62px;
   height: 62px;
