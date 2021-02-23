@@ -1051,7 +1051,9 @@
 }
 
 .footer-rigth-button__enter .escape:focus
-.footer-rigth__button:focus {
+.footer-rigth__button--icon_chart:focus,
+footer-rigth__button--icon_basket:focus,
+.footer-rigth-button__enter-name:focus {
   outline: 2px solid currentColor;
   outline-offset: 2px;
   color: var(--basic-white);
