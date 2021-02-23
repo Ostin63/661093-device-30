@@ -1784,11 +1784,17 @@ footer-rigth__button--icon_basket:focus,
   padding-top: 1px;
 }
 
-.new::before {
+.item-info__new {
+  display: none;
+}
+
+.item-info__new--active {
+  display: block;
   position: absolute;
   content: "";
   width: 62px;
   height: 62px;
+  margin: 0;
   top: 29px;
   right: 27px;
   background: var(--new) 0 0 no-repeat;
