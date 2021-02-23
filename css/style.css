@@ -1040,7 +1040,7 @@
   margin-left: 5px;
 }
 
-.footer-rigth-button__enter .escape {
+.footer-rigth-button__escape {
   margin-left: 20px;
   color: var(--white-70);
   box-sizing: border-box;
@@ -1050,7 +1050,7 @@
   color: var(--basic-white);
 }
 
-.footer-rigth-button__enter .escape:focus
+.footer-rigth-button__escape:focus
 .footer-rigth__button--icon_chart:focus,
 footer-rigth__button--icon_basket:focus,
 .footer-rigth-button__enter-name:focus {
@@ -1061,7 +1061,7 @@ footer-rigth__button--icon_basket:focus,
 }
 
 .footer-rigth-button__enter:active,
-.footer-rigth-button__enter:active .escape,
+.footer-rigth-button__escape:active,
 .footer-rigth__button--icon_chart:active,
 .footer-rigth__button--icon_basket:active,
 .footer-rigth-button__enter-name:active {
