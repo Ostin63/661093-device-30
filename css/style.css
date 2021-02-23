@@ -253,6 +253,7 @@
 }
 
 .page-header__logo {
+  width: 163px;
   margin-top: -20px;
   color: var(--basic-black);
   grid-column: 1 /2;
