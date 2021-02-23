@@ -1051,9 +1051,7 @@
 }
 
 .footer-rigth-button__enter .escape:focus
-.footer-rigth__button--icon_chart:focus,
-footer-rigth__button--icon_basket:focus,
-.footer-rigth-button__enter-name:focus {
+.footer-rigth__button:focus {
   outline: 2px solid currentColor;
   outline-offset: 2px;
   color: var(--basic-white);
@@ -1102,15 +1100,11 @@ footer-rigth__button--icon_basket:focus,
   background: var(--icon-basket-footer) 0 0 no-repeat;
 }
 
-.footer-rigth__button--icon_user:hover::before,
-.footer-rigth__button--icon_chart:hover::before,
-.footer-rigth__button--icon_basket:hover::before {
+.footer-rigth__button:hover::before {
   opacity: 0.6;
 }
 
-.footer-rigth__button--icon_user:active::before,
-.footer-rigth__button--icon_chart:active::before,
-.footer-rigth__button--icon_basket:active::before {
+.footer-rigth__button:active::before {
   opacity: 0.3;
 }
 
