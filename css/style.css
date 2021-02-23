@@ -1791,7 +1791,6 @@ footer-rigth__button--icon_basket:focus,
 .item-info__new--active {
   display: block;
   position: absolute;
-  content: "";
   width: 62px;
   height: 62px;
   margin: 0;
