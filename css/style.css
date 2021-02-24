@@ -95,6 +95,7 @@
   --radio-on: url("../img/radio-on.svg ");
   --radio-off: url("../img/radio-off.svg");
   --new: url("../img/new.svg");
+  --marker: url("../img/marker.svg");
   --grid-col: 60px;
   --grid-gap: 40px;
   --grid-shift: 32px;
@@ -955,7 +956,11 @@
 }
 
 .promo__carriers li {
-  margin-left: 32px;
+  padding-left: 32px;
+  background-image: var(--marker);
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  background-position: 0 50%;
 }
 
 .promo__carriers strong {
