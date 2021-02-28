@@ -1797,7 +1797,7 @@ footer-rigth__button--icon_basket:focus,
   display: none;
 }
 
-.item-info__new--active {
+.item-info__new_active {
   position: absolute;
   display: block;
   width: 62px;
