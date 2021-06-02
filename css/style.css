@@ -555,7 +555,7 @@
 }
 
 .top-section__slider {
-  list-style-type: none;
+  list-style: none;
   box-sizing: border-box;
   counter-reset: list1;
 }
