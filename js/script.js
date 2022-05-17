@@ -1,8 +1,8 @@
 /*Function sliders*/
 
-const switchSlides = function (switchers, slides) {
+const switchSlides = (switchers, slides) => {
   for (let i = 0; i < switchers.length; i++) {
-    switchers[i].addEventListener('click', function () {
+    switchers[i].addEventListener('click', () => {
 
       for (let i = 0; i < switchers.length; i++) {
         switchers[i].classList.remove('button-active');
@@ -42,7 +42,7 @@ const rememberFocus = function (evt) {
   }
 }
 
-const modalClose = function (evt) {
+const modalClose = (evt) => {
   evt.preventDefault();
   document.querySelector('.show-block').classList.remove('show-block');
   window.removeEventListener('keypress', onEscapePress);
@@ -52,7 +52,7 @@ const modalClose = function (evt) {
   }
 }
 
-const onEscapePress = function (evt) {
+const onEscapePress = (evt) => {
   if (evt.keyCode === 27) {
     modalClose(evt);
   }
